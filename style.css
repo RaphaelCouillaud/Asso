@@ -7,7 +7,7 @@ overscroll-behavior: none;
 body {
 margin: 0;
 padding: 0;	
- font-family: 'Gloria Hallelujah', Helvetica, Arial, sans-serif;
+font-family: 'Sniglet', Helvetica, Arial, sans-serif;
 box-sizing: border-box;
 overflow-x: hidden;
 min-height: 100vh;
@@ -79,14 +79,35 @@ section img {
 #text {
   position: absolute;
   color: blue;
-  font-size: 2em;
+  font-size: 4em;
   text-align: center;
   transform: translateY(-50%);
+   background-image: linear-gradient(
+        180deg,         
+        #FF0000 14%, 
+        #FF7F00 14%, 
+        #FF7F00 28%, 
+        #FFFF00 28%, 
+        #FFFF00 43%, 
+        #00FF00 43%, 
+        #00FF00 57%, 
+        #0000FF 57%, 
+        #0000FF 71%, 
+        #4B0082 71%,
+        #4B0082 85%, 
+        #9400D3 85%);
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 
 }
-#text span {
-  font-size: 3em;
-}
+
 #btn {
   text-decoration: none;
   display: inline-block;
@@ -106,10 +127,6 @@ section img {
 .sec h2, .sec p {
   color: white;
 }
-
-
-
-
 
 
 
