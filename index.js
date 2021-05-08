@@ -6,6 +6,8 @@ let bird2 = document.getElementById('bird2');
 let back = document.getElementById('back');
 let btn = document.getElementById('btn');
 let plants = document.getElementById('plants');
+let piles1 = document.getElementById('piles1');
+let piles2 = document.getElementById('piles2');
 let water = document.getElementById('water');
 
 window.addEventListener('scroll', () => {
@@ -19,6 +21,8 @@ window.addEventListener('scroll', () => {
  btn.style.marginTop = value * 1.5 + 'px';
  back.style.top = value * -0.15 + 'px';
  plants.style.top = value * 0.25 + 'px';
+ piles1.style.left = value * -3 + 'px';
+ piles2.style.left = value * 3 + 'px';
  
  })
 
