@@ -7,11 +7,11 @@ overscroll-behavior: none;
 body {
 margin: 0;
 padding: 0;	
-font-family: 'Sniglet', Helvetica, Arial, sans-serif;
+font-family: 'Squada One', Helvetica, Arial, sans-serif;
 box-sizing: border-box;
 overflow-x: hidden;
 min-height: 100vh;
-background: #CDF6FA;
+background: #78e4e4;
 }
 a {
 text-decoration: none;
@@ -52,7 +52,7 @@ header ul li a:hover, .active {
 section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,8 +63,8 @@ section::before {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 150px;
-  background: linear-gradient(to top, blue, transparent);
+  height: 50px;
+  background: linear-gradient(to top, #085c74, transparent);
   z-index: 10;
 }
 section img {
@@ -118,12 +118,13 @@ h1 span {
   font-size: 1.5em;
   border-radius: 30px;
   transform: translateY(100px);
+  z-index: 10000;
   
 }
 .sec {
   position: relative;
   padding: 100px;
-  background: blue;
+  background: #085c74;
 }
 .sec h2, .sec p {
   color: white;
@@ -137,6 +138,56 @@ h1 span {
   
   font-size: 5em;
 }*/
+
+.container {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h3 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.message {
+  font-size: 4rem;
+  display: none;
+  padding: 1rem;
+}
+
+.emoji {
+  padding: 0 .25rem;
+}
+
+@media all and (max-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  li {
+    font-size: 1.125rem;
+    padding: .75rem;
+  }
+  
+  li span {
+    font-size: 3.375rem;
+  }
+}
 /*-------------------------------NAV FOOTER-------------------------*/
 .to-top {
 position: fixed;
