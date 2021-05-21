@@ -7,7 +7,7 @@ overscroll-behavior: none;
 body {
 margin: 0;
 padding: 0;	
-font-family: 'Squada One', Helvetica, Arial, sans-serif;
+font-family: 'Pirata One', Helvetica, Arial, sans-serif;
 box-sizing: border-box;
 overflow-x: hidden;
 min-height: 100vh;
@@ -77,7 +77,7 @@ nav ul li a {
   text-decoration: none;
   display: block;
   font-size: 1.5em;
-  color: #085c74;
+  color: black;
   text-align: center;
 }
 nav ul li a:hover, nav ul li a.active {
@@ -161,15 +161,16 @@ section img {
 }
 h1 {
   position: absolute;
-  color: black;
-  opacity: 95%;
-  -webkit-text-stroke: 0.15px white;
-  font-size: 1.5em;
+  color: white;
+  
+ -webkit-text-stroke: 1px black;
+  letter-spacing: 0.25em;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: bolder;
   text-align: center;
   transform: translateY(-50%);
- /*  background-image: linear-gradient(
+  background-image: linear-gradient(
         180deg,         
         #FF0000 14%, 
         #FF7F00 14%, 
@@ -188,10 +189,10 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
-  -moz-text-fill-color: transparent;*/
+  -moz-text-fill-color: transparent;
 }
 h1 span {
-  font-size: 4em;
+  font-size: 3.5em;
 }
 #actioncounter {
   text-decoration: none;
@@ -200,7 +201,7 @@ h1 span {
   color: white;
   font-size: 1.5em;
   border-radius: 30px;
-  transform: translateY(100px);
+  transform: translateY(200px);
   z-index: 10000;
   display: flex;
   justify-content: center;
@@ -260,7 +261,7 @@ backdrop-filter: blur( 4px );
 
 .sec {
   position: relative;
-  padding: 100px;
+  padding: 0 75px;
   background: #085c74;
   display: flex;
   flex-direction: column;
