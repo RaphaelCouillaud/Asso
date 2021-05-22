@@ -27,7 +27,7 @@ window.addEventListener('scroll', () => {
  cloud2.style.left = value * 5 + 'px';
  sun.style.left = value * -0.5 + 'px';
  sun.style.top = value * 0.25 + 'px';
- actioncounter.style.marginTop = value * 0.5 + 'px';
+ actioncounter.style.marginTop = value * 0.25 + 'px';
  back.style.top = value * -0.15 + 'px';
  plants.style.top = value * 0.025 + 'px';
  fish.style.left = value * 0.55 + 'px';
@@ -72,7 +72,39 @@ function newYear(){
 setInterval (function(){
 	newYear();
 },1000)
-//////
+
+// HIDE SHOW DIV //
+const show1 = document.getElementById('op-1');
+const show2 = document.getElementById('op-2');
+const show3 = document.getElementById('op-3');
+const opText1 = document.getElementById('op-1-text');
+const opText2 = document.getElementById('op-2-text');
+const opText3 = document.getElementById('op-3-text');
+
+show1.onclick = function(){
+	opText1.style.display = "block";
+	opText2.style.display = "none";
+	opText3.style.display = "none";
+	show1.style.borderBottom = "5px solid #78e4e4";
+	show2.style.borderBottom = "none";
+	show3.style.borderBottom = "none";
+}
+show2.onclick = function(){
+	opText1.style.display = "none";
+	opText2.style.display = "block";
+	opText3.style.display = "none";
+	show1.style.borderBottom = "none";
+	show2.style.borderBottom = "5px solid #78e4e4";
+	show3.style.borderBottom = "none";
+}
+show3.onclick = function(){
+	opText1.style.display = "none";
+	opText2.style.display = "none";
+	opText3.style.display = "block";
+	show1.style.borderBottom = "none";
+	show2.style.borderBottom = "none";
+	show3.style.borderBottom = "5px solid #78e4e4";
+}
 
 
 // SCROLL TO TOP //
