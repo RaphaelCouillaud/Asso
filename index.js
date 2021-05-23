@@ -77,33 +77,51 @@ setInterval (function(){
 const show1 = document.getElementById('op-1');
 const show2 = document.getElementById('op-2');
 const show3 = document.getElementById('op-3');
+const show4 = document.getElementById('op-4');
 const opText1 = document.getElementById('op-1-text');
 const opText2 = document.getElementById('op-2-text');
 const opText3 = document.getElementById('op-3-text');
+const opText4 = document.getElementById('op-4-text');
 
 show1.onclick = function(){
 	opText1.style.display = "block";
 	opText2.style.display = "none";
 	opText3.style.display = "none";
+	opText4.style.display = "none";
 	show1.style.borderBottom = "5px solid #78e4e4";
 	show2.style.borderBottom = "none";
 	show3.style.borderBottom = "none";
+	show4.style.borderBottom = "none";
 }
 show2.onclick = function(){
 	opText1.style.display = "none";
 	opText2.style.display = "block";
 	opText3.style.display = "none";
+	opText4.style.display = "none";
 	show1.style.borderBottom = "none";
 	show2.style.borderBottom = "5px solid #78e4e4";
 	show3.style.borderBottom = "none";
+	show4.style.borderBottom = "none";
 }
 show3.onclick = function(){
 	opText1.style.display = "none";
 	opText2.style.display = "none";
 	opText3.style.display = "block";
+	opText4.style.display = "none";
 	show1.style.borderBottom = "none";
 	show2.style.borderBottom = "none";
 	show3.style.borderBottom = "5px solid #78e4e4";
+	show4.style.borderBottom = "none";
+}
+show4.onclick = function(){
+	opText1.style.display = "none";
+	opText2.style.display = "none";
+	opText3.style.display = "none";
+	opText4.style.display = "block";
+	show1.style.borderBottom = "none";
+	show2.style.borderBottom = "none";
+	show3.style.borderBottom = "none";
+	show4.style.borderBottom = "5px solid #78e4e4";
 }
 
 
