@@ -126,15 +126,15 @@ show4.onclick = function(){
 
 
 // SCROLL TO TOP //
-//const toTop = document.querySelector(".to-top");
+const toTop = document.querySelector(".to-top");
 
-//window.addEventListener("scroll", () => {
+window.addEventListener("scroll", () => {
   
-//  if (window.pageYOffset > 1000) {
-//    toTop.classList.add("active");
-//  } else {
-//    toTop.classList.remove("active");
-//  }
-//})
+if (window.pageYOffset > 600) {
+toTop.classList.add("up");
+} else {
+toTop.classList.remove("up");
+}
+})
 //////////////////////////////////////////////////////////////////////////////////////
 
