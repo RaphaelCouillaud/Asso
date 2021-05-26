@@ -71,7 +71,7 @@ function newYear(){
 }
 setInterval (function(){
 	newYear();
-},1000)
+},1000);
 
 // HIDE SHOW DIV //
 const show1 = document.getElementById('op-1');
@@ -122,9 +122,31 @@ show4.onclick = function(){
 	show2.style.borderBottom = "none";
 	show3.style.borderBottom = "none";
 	show4.style.borderBottom = "5px solid #78e4e4";
+};
+
+// HIDE SHOW ACTIONS //
+const action1 = document.getElementById('ac-1'); //options
+const action2 = document.getElementById('ac-2');
+const showAction1 = document.getElementById('ac-1-text');//choix display
+const showAction2 = document.getElementById('ac-2-text');
+
+
+action1.onclick = function(){
+	showAction1.style.display = "block";
+	showAction2.style.display = "none";	
+	action1.style.opacity = "1";
+	action1.style.filter = "grayscale(0)";
+	action2.style.opacity = "0.5";
+	action2.style.filter = "grayscale(1)";
 }
-
-
+action2.onclick = function(){
+	showAction1.style.display = "none";
+	showAction2.style.display = "block";	
+	action1.style.opacity = "0.5";
+	action1.style.filter = "grayscale(1)";
+	action2.style.opacity = "1";
+	action2.style.filter = "grayscale(0)";	
+}
 // SCROLL TO TOP //
 const toTop = document.querySelector(".to-top");
 
