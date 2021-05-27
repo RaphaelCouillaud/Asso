@@ -1,3 +1,6 @@
+/*bleu #78e4e4 - rgba(120, 228, 228, 1)
+vert #085c74 - rgba(8, 92, 116, 1)
+marron #58340c - rgba(88, 52, 12, 1) */
 
 html {
 scroll-behavior: smooth;
@@ -157,14 +160,14 @@ background-position: top center;
 #parallax::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   width: 100%;
-  height: 125px;
+  height: 100px;
   /*background: linear-gradient(to top, #085c74, transparent);*/
   background-image: linear-gradient(
         180deg,         
-        transparent 10%,        
+        transparent 75%,        
         #085c74 100%);
   z-index: 10;
 }
@@ -181,9 +184,10 @@ h1 {
   position: absolute;
   color: white;
   font-family: 'Pirata One', Helvetica, Arial, sans-serif;
- -webkit-text-stroke: 1px black;
-  letter-spacing: 0.25em;
-  font-size: 2em;
+ -webkit-text-stroke: 3px black;
+  letter-spacing: 0.05em;
+  line-height: 1.075em;
+  font-size: 6em;
   text-transform: uppercase;
   font-weight: bolder;
   text-align: center;
@@ -209,9 +213,7 @@ h1 {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;*/
 }
-h1 span {
-  font-size: 3.5em;
-}
+
 /*/////////////////////////////////////COUNTDOWN//////////////////////////////////*/
 #actioncounter {
   text-decoration: none;
@@ -590,8 +592,8 @@ backdrop-filter: blur( 4px );
   width: 100%;
   border: 3px solid red;   
     background-image: linear-gradient(
-        rgba(255, 255, 255, 1), 
-        rgba(0, 0, 0, 0.5)
+        rgba(120, 228, 228, 0.75), 
+        rgba(8, 92, 116, 0.75)
       ), url("img/background.png"); 
 background-size: cover;
 background-attachment: fixed;
@@ -603,6 +605,14 @@ background-position: top center;
   flex-direction: row;
   justify-content: space-around;
    font-family: 'Pirata One', Helvetica, Arial, sans-serif;
+   background-image: linear-gradient(
+        rgba(8, 92, 116, 0.9), 
+        rgba(120, 228, 228, 0.75)
+      ), url("img/background.png"); 
+background-size: cover;
+background-attachment: fixed;
+background-repeat: repeat;
+background-position: top center;
 
 }
 .textactions {
@@ -630,7 +640,6 @@ background-position: top center;
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  height: 450px;
   background-size: cover;
   background-repeat: no-repeat;  
   transition: all 0.5s;
@@ -675,10 +684,12 @@ background-position: top center;
 	width: 640px;
 	height: 360px;
 	overflow: hidden;
+
 }
 .middle {
 	position: relative;
 	margin: auto;
+
 
 }
 .slidenav {
@@ -687,6 +698,7 @@ background-position: top center;
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
+
 }
 .slidenavbar {
 	width: 50px;
@@ -717,19 +729,19 @@ background-position: top center;
 	height: 100%;
 	object-fit: cover;
 }
-#radio1:checked ~ .slide1{
+#radio1:checked ~ .slide1, #radio6:checked ~ .slide6 {
 	margin-left: 0;
 }
-#radio2:checked ~ .slide1{
+#radio2:checked ~ .slide1, #radio7:checked ~ .slide6{
 	margin-left: -20%;
 }
-#radio3:checked ~ .slide1{
+#radio3:checked ~ .slide1, #radio8:checked ~ .slide6{
 	margin-left: -40%;
 }
-#radio4:checked ~ .slide1{
+#radio4:checked ~ .slide1, #radio9:checked ~ .slide6{
 	margin-left: -60%;
 }
-#radio5:checked ~ .slide1{
+#radio5:checked ~ .slide1, #radio10:checked ~ .slide6{
 	margin-left: -80%;
 }
 
@@ -800,6 +812,37 @@ transform: rotate(0deg);
 text-shadow: -1px 0 2px white, 0 1px 2px white, 1px 0 2px white, 0 -1px 10px white;
 color: #085c74;
 }
+footer {   
+height: 325px;
+display: flex;
+text-align: center;
+position: relative;
+background-image: url("img/footer.png");
+background-attachment: scroll;
+background-size: cover;
+background-repeat: repeat;
+background-position: center ;
+padding-top: 50px;
+position: relative;
+font-family: 'Audiowide', cursive;
+  
+}
+footer p {
+color: white;
+font-weight: bolder;
+margin: auto;
+position: absolute;
+bottom: 0%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+footer p strong {
+font-family: 'SEGA', 'Audiowide', Helvetica, Arial, sans-serif;
+color: #bc040c;
+letter-spacing: 0.5px;
+font-weight: lighter;
+}
+
 /*-------------------------------MEDIA QUERIES-------------------------*/
 @media (max-width: 768px) {
   .menu-toggle {   
