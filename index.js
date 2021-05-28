@@ -3,6 +3,7 @@ let header = document.getElementById('header');
 let text = document.getElementById('text');
 let bird1 = document.getElementById('bird1');
 let bird2 = document.getElementById('bird2');
+let butterflies = document.getElementById('butterflies');
 let cloud1 = document.getElementById('cloud1');
 let cloud2 = document.getElementById('cloud2');
 let sun = document.getElementById('sun');
@@ -23,6 +24,8 @@ window.addEventListener('scroll', () => {
  bird1.style.left = value * -2 + 'px';
  bird2.style.top = value * -1.5 + 'px';
  bird2.style.left = value * 5 + 'px';
+ butterflies.style.top = value * -1 + 'px';
+ butterflies.style.left = value * 1 + 'px';
  cloud1.style.left = value * -2 + 'px';
  cloud2.style.left = value * 5 + 'px';
  sun.style.left = value * -0.5 + 'px';
@@ -132,7 +135,7 @@ const showAction2 = document.getElementById('ac-2-text');
 
 
 action1.onclick = function(){
-	showAction1.style.display = "block";
+	showAction1.style.display = "flex";
 	showAction2.style.display = "none";	
 	action1.style.opacity = "1";
 	action1.style.filter = "grayscale(0)";
@@ -141,7 +144,7 @@ action1.onclick = function(){
 }
 action2.onclick = function(){
 	showAction1.style.display = "none";
-	showAction2.style.display = "block";	
+	showAction2.style.display = "flex";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "1";
