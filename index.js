@@ -147,6 +147,252 @@ action2.onclick = function(){
 	action2.style.opacity = "1";
 	action2.style.filter = "grayscale(0)";	
 }
+
+// SHOW HIDE ANSWERS //
+const question1 = document.getElementById('question-1');
+const question2 = document.getElementById('question-2');
+const question3 = document.getElementById('question-3');
+const question4 = document.getElementById('question-4');
+const question5 = document.getElementById('question-5');
+const question6 = document.getElementById('question-6');
+const question7 = document.getElementById('question-7');
+const answer1 = document.getElementById('question-1-text');
+const answer2 = document.getElementById('question-2-text');
+const answer3 = document.getElementById('question-3-text');
+const answer4 = document.getElementById('question-4-text');
+const answer5 = document.getElementById('question-5-text');
+const answer6 = document.getElementById('question-6-text');
+const answer7 = document.getElementById('question-7-text');
+
+
+question1.onclick = function(){
+	answer1.style.display = "block";
+	answer2.style.display = "none";	
+	answer3.style.display = "none";	
+	answer4.style.display = "none";	
+	answer5.style.display = "none";	
+	answer6.style.display = "none";	
+	answer7.style.display = "none";		
+	question1.style.opacity = "1";
+	question1.style.transform = "scale(1.25)";
+	question2.style.opacity = "0.5";
+	question2.style.transform = "scale(1)";	
+	question3.style.opacity = "0.5";
+	question3.style.transform = "scale(1)";		
+	question4.style.opacity = "0.5";
+	question4.style.transform = "scale(1)";		
+	question5.style.opacity = "0.5";
+	question5.style.transform = "scale(1)";		
+	question6.style.opacity = "0.5";	
+	question6.style.transform = "scale(1)";	
+	question7.style.opacity = "0.5";
+	question7.style.transform = "scale(1)";	
+}
+question2.onclick = function(){
+	answer1.style.display = "none";
+	answer2.style.display = "block";
+	answer3.style.display = "none";	
+	answer4.style.display = "none";	
+	answer5.style.display = "none";	
+	answer6.style.display = "none";	
+	answer7.style.display = "none";		
+	question1.style.opacity = "0.5";
+	question1.style.transform = "scale(1)";
+	question2.style.opacity = "1";
+	question2.style.transform = "scale(1.25)";	
+	question3.style.opacity = "0.5";
+	question3.style.transform = "scale(1)";		
+	question4.style.opacity = "0.5";
+	question4.style.transform = "scale(1)";		
+	question5.style.opacity = "0.5";
+	question5.style.transform = "scale(1)";		
+	question6.style.opacity = "0.5";	
+	question6.style.transform = "scale(1)";	
+	question7.style.opacity = "0.5";
+	question7.style.transform = "scale(1)";	
+}
+question3.onclick = function(){
+	answer1.style.display = "none";
+	answer2.style.display = "none";	
+	answer3.style.display = "block";	
+	answer4.style.display = "none";	
+	answer5.style.display = "none";	
+	answer6.style.display = "none";	
+	answer7.style.display = "none";		
+	question1.style.opacity = "0.5";
+	question1.style.transform = "scale(1)";
+	question2.style.opacity = "0.5";
+	question2.style.transform = "scale(1)";	
+	question3.style.opacity = "1";
+	question3.style.transform = "scale(1.25)";		
+	question4.style.opacity = "0.5";
+	question4.style.transform = "scale(1)";		
+	question5.style.opacity = "0.5";
+	question5.style.transform = "scale(1)";		
+	question6.style.opacity = "0.5";	
+	question6.style.transform = "scale(1)";	
+	question7.style.opacity = "0.5";
+	question7.style.transform = "scale(1)";	
+}
+question4.onclick = function(){
+	answer1.style.display = "none";
+	answer2.style.display = "none";	
+	answer3.style.display = "none";	
+	answer4.style.display = "block";	
+	answer5.style.display = "none";	
+	answer6.style.display = "none";	
+	answer7.style.display = "none";	
+	question1.style.opacity = "0.5";
+	question1.style.transform = "scale(1)";
+	question2.style.opacity = "0.5";
+	question2.style.transform = "scale(1)";	
+	question3.style.opacity = "0.5";
+	question3.style.transform = "scale(1)";		
+	question4.style.opacity = "1";
+	question4.style.transform = "scale(1.25)";		
+	question5.style.opacity = "0.5";
+	question5.style.transform = "scale(1)";		
+	question6.style.opacity = "0.5";	
+	question6.style.transform = "scale(1)";	
+	question7.style.opacity = "0.5";
+	question7.style.transform = "scale(1)";		
+}
+question5.onclick = function(){
+	answer1.style.display = "none";
+	answer2.style.display = "none";	
+	answer3.style.display = "none";	
+	answer4.style.display = "none";	
+	answer5.style.display = "block";	
+	answer6.style.display = "none";	
+	answer7.style.display = "none";		
+	question1.style.opacity = "0.5";
+	question1.style.transform = "scale(1)";
+	question2.style.opacity = "0.5";
+	question2.style.transform = "scale(1)";	
+	question3.style.opacity = "0.5";
+	question3.style.transform = "scale(1)";		
+	question4.style.opacity = "0.5";
+	question4.style.transform = "scale(1)";		
+	question5.style.opacity = "1";
+	question5.style.transform = "scale(1.25)";		
+	question6.style.opacity = "0.5";	
+	question6.style.transform = "scale(1)";	
+	question7.style.opacity = "0.5";
+	question7.style.transform = "scale(1)";		
+}
+question6.onclick = function(){
+	answer1.style.display = "none";
+	answer2.style.display = "none";	
+	answer3.style.display = "none";	
+	answer4.style.display = "none";	
+	answer5.style.display = "none";	
+	answer6.style.display = "block";	
+	answer7.style.display = "none";		
+	question1.style.opacity = "0.5";
+	question1.style.transform = "scale(1)";
+	question2.style.opacity = "0.5";
+	question2.style.transform = "scale(1)";	
+	question3.style.opacity = "0.5";
+	question3.style.transform = "scale(1)";		
+	question4.style.opacity = "0.5";
+	question4.style.transform = "scale(1)";		
+	question5.style.opacity = "0.5";
+	question5.style.transform = "scale(1)";		
+	question6.style.opacity = "1";	
+	question6.style.transform = "scale(1.25)";	
+	question7.style.opacity = "0.5";
+	question7.style.transform = "scale(1)";	
+}
+question7.onclick = function(){
+	answer1.style.display = "none";
+	answer2.style.display = "none";	
+	answer3.style.display = "none";	
+	answer4.style.display = "none";	
+	answer5.style.display = "none";	
+	answer6.style.display = "none";	
+	answer7.style.display = "block";	
+	question1.style.opacity = "0.5";
+	question1.style.transform = "scale(1)";
+	question2.style.opacity = "0.5";
+	question2.style.transform = "scale(1)";	
+	question3.style.opacity = "0.5";
+	question3.style.transform = "scale(1)";		
+	question4.style.opacity = "0.5";
+	question4.style.transform = "scale(1)";		
+	question5.style.opacity = "0.5";
+	question5.style.transform = "scale(1)";		
+	question6.style.opacity = "0.5";	
+	question6.style.transform = "scale(1)";	
+	question7.style.opacity = "1";
+	question7.style.transform = "scale(1.25)";	
+	
+}
+// COUNTER //
+//jQuery(window).scroll(startCounter);
+//function startCounter() {
+//    var hT = jQuery('.contentcounter').offset().top,
+//        hH = jQuery('.contentcounter').outerHeight(),
+//        wH = jQuery(window).height();
+//    if (jQuery(window).scrollTop() > hT+hH-wH) {
+//        jQuery(window).off("scroll", startCounter);
+//        jQuery('.numbercounter').each(function () {
+//            var $this = jQuery(this);
+//           jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+//                duration: 2000,
+//                easing: 'swing',
+//                step: function () {
+//                    $this.text(Math.ceil(this.Counter));
+//                }
+//            });
+//       });
+//    }
+//}
+
+// ok///////////////////////////////////////////////////////
+//jQuery('.numbercounter').each(function () {
+//            var $this = jQuery(this);
+//            jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
+//                duration: 5000,
+//                easing: 'swing',
+//                step: function () {
+//                    $this.text(Math.ceil(this.Counter));
+//               }
+//           });
+ //       });
+
+var counted = 0;
+$(window).scroll(function() {
+
+  var oTop = $('#counter-up').offset().top - window.innerHeight;
+  if (counted == 0 && $(window).scrollTop() > oTop) {
+    $('.numbercounter').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+
+        {
+
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+
+        });
+    });
+    counted = 1;
+  }
+
+});
+
 // SCROLL TO TOP //
 const toTop = document.querySelector(".to-top");
 
