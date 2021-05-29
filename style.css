@@ -443,6 +443,18 @@ backdrop-filter: blur( 4px );
 	align-items: center;
 	min-height: 100vh;	
   padding-bottom: 100px;
+   background-image: linear-gradient(
+        rgba(0, 0, 0, 0.85), 
+        rgba(8, 92, 116, 1)
+      ), url("img/background.png"); 
+   /*background-image: linear-gradient(270deg,
+         rgba(8, 92, 116, 0.85), 
+        rgba(255, 255, 255, 0.85)
+      ), url("img/background.png"); */
+background-size: cover;
+background-attachment: scroll;
+background-repeat: repeat;
+background-position: top center;
 }
 #introtemoignages {
   width: 75%;
@@ -455,7 +467,7 @@ backdrop-filter: blur( 4px );
 .testimonials {
   position: relative;
   max-width: 100%;  
-  -webkit-box-reflect: below 1px linear-gradient(transparent 75%, #085c74);
+  -webkit-box-reflect: below 1px linear-gradient(transparent 85%, #085c74);
 }
 /*.swiper-container {
       width: 100%;
@@ -589,6 +601,16 @@ backdrop-filter: blur( 4px );
 	top: 0;
 }
 /*/////////////////////////COUNTER UP///////////////////////////*/
+#bilancounter {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+#bilancounter h2 {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
 #counter-up {
   min-height: 50vh;  
   display: flex;
@@ -650,7 +672,6 @@ background-position: top center;
 font-family: 'Special Elite', cursive;
 color: black;
 padding: 15px 5px 40px 5px;
-transform: rotate(358deg);
 box-shadow: 1px 1px 20px 7px black;
 text-align: center;
 }
@@ -660,6 +681,7 @@ text-align: center;
    width: 100%;
   font-size: 4em;
     font-family: 'Pirata One', Helvetica, Arial, sans-serif;
+    padding: 25px 0 25px 0;
 }
 .intro-actionsfutures img {
   margin: auto;
@@ -693,6 +715,23 @@ background-size: cover;
 background-attachment: fixed;
 background-repeat: repeat;
 background-position: top center;
+
+}
+#actionspassees h2 {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+ font-size: 4em;
+    font-family: 'Pirata One', Helvetica, Arial, sans-serif;
+}
+#introactions {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+ font-size: 1.5em;
+  
 }
 .option-action {
   display: flex;
@@ -707,6 +746,7 @@ background-size: cover;
 background-attachment: fixed;
 background-repeat: repeat;
 background-position: top center;
+padding: 50px;
 }
 .option-action img {
   cursor: pointer;
@@ -761,6 +801,7 @@ box-shadow: 1px 1px 20px 7px black;
   display: flex;
   flex-direction: column;  
 }
+
 .ink-action {
   position: relative;
   display: flex;
@@ -883,6 +924,16 @@ box-shadow: 1px 1px 20px 7px black;
   display: flex;
   flex-direction: row;  
   width: 100%;
+    background-image: linear-gradient(270deg,
+         rgba(8, 92, 116, 0.85), 
+        rgba(255, 255, 255, 0.85)
+      ), url("img/background.png"); 
+background-size: cover;
+background-attachment: fixed;
+background-repeat: repeat;
+background-position: top center;
+padding-top: 50px;
+
 }
 .middle-faq {
   width: 5%;
@@ -899,7 +950,7 @@ box-shadow: 1px 1px 20px 7px black;
   margin: auto;
 }
 .middle-faq i:nth-child(1) {
-  color: #b8ecf4;
+  color: #085c74;
 }
 .middle-faq i:nth-child(3) {
    transform: rotate(180deg);
@@ -917,9 +968,10 @@ margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  color: #b8ecf4;
+  color: #085c74;
     width: 33%;
     margin: auto;
+    text-align: center;
 }
 .answers-faq {
   width: 33%;
@@ -980,6 +1032,7 @@ article {
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
+  padding-top: 50px;
 }
 .articlepresse {
   width: 200px;
