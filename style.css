@@ -457,7 +457,7 @@ color: white;
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;	
-  padding-bottom: 100px;
+  
    background-image: linear-gradient(
         rgba(0, 0, 0, 0.85), 
         rgba(8, 92, 116, 1)
@@ -470,15 +470,30 @@ background-size: cover;
 background-attachment: scroll;
 background-repeat: repeat;
 background-position: top center;
+padding: 50px 0;
 }
 #introtemoignages {
-  width: 75%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   margin: auto;
   text-align: center;
-  font-size: 1.75em;
+  padding-bottom: 50px;
 }
+#introtemoignages h2 {   
+   margin: 0 auto;
+  text-align: center;
+   width: 100%;
+  font-size: 4em;
+    font-family: 'Pirata One', Helvetica, Arial, sans-serif;
+    padding-bottom: 25px;
+}
+#introtemoignages p { 
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
 .testimonials {
   position: relative;
   max-width: 100%;  
@@ -693,7 +708,7 @@ backdrop-filter: blur(4px);
 -webkit-backdrop-filter: blur(4px);
 box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5), 0 0 100px 100px rgba(0, 0, 0, 0.1);  
   background: rgba( 255, 255, 255, 0.25 );
-
+ border-radius: 30px;
 }
 
 #actionsfutures h2 {
@@ -1006,7 +1021,12 @@ margin: auto;
   margin: auto;
   display: flex;
   font-size: 1.5em;
- 
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5), 0 0 100px 100px rgba(0, 0, 0, 0.1);  
+  background: rgba( 255, 255, 255, 0.25 );
+/*mix-blend-mode: hard-light;*/
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+  border-radius: 30px;
 }
 .questions-faq p {
   cursor: pointer;
@@ -1035,7 +1055,7 @@ margin: auto;
   transition: all 0.5s;
   text-align: center;
   margin: auto; 
-  border: 3px solid white;
+  
   padding: 10px;
 }
 .question-text img{
@@ -1051,24 +1071,109 @@ margin: auto;
   display: block;
 }
 
+/*//////////////////////POUVOIRS PUBLICS//////////////////////////*/
+#mairies {
+  position: relative;   
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-evenly;  
+  width: 100%;
+  padding: 50px;
+  align-items: center;
+}
+#intromairies {
+  width: 25%;
+  margin: auto;
+  padding: 0 15px;
+  text-align: center;
+  font-size: 1.25em;
+  align-items: center;
+  border: 3px solid red;
+  /* writing-mode: vertical-rl;
+text-orientation: upright;*/
+}
+#intromairies h2 strong{
+  font-family: 'Pirata One', Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  /* writing-mode: vertical-rl;
+text-orientation: upright;*/
+}
+#divmairies {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.linksmairies {
+  width: 10%;
+   height: 200px;
+  display: flex;
+  flex-direction: column;
+   justify-content: space-evenly;
+  position: relative;
+  text-align: center;
+  align-items: center;  
+  margin: auto;
+}
+.linksmairies a {
+  margin: auto;  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.linksmairies h3, .linksmairies img {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  object-fit: cover;
+} 
+.linksmairies a:hover {
+ transform: scale(1.25);
+}
+
 
 /*//////////////////////PRESSE//////////////////////////*/
 article {
   position: relative;   
   display: flex;
   flex-direction: row;  
+  justify-content: space-evenly;  
+  width: 100%;
+  padding: 25px;
+  align-items: center;
+}
+#intropresse {
+  width: 25%;
+  margin: auto;
+  padding: 0 15px;
+  text-align: center;
+  font-size: 1.25em;
+  /* writing-mode: vertical-rl;
+text-orientation: upright;*/
+}
+#intropresse h2 strong{
+  font-family: 'Pirata One', Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  /* writing-mode: vertical-rl;
+text-orientation: upright;*/
+}
+#divpresse {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  width: 100%;
-  padding-top: 50px;
+  margin: auto;
 }
 .articlepresse {
-  width: 200px;
+  width: 175px;
   object-fit: cover;
   height: auto;
   position: relative;
   text-align: center;
   align-items: center;
+  padding: 25px;
 }
 .articlepresse h2, .articlepresse p, .articlepresse img {
   margin: auto;
@@ -1099,14 +1204,119 @@ article {
 }
 
 
+/*///////////////////VIDEO///////////////////////////////////////////*/
+#sectiontv {
+  position: relative;   
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-evenly;  
+  width: 100%;
+  padding: 50px;
+  align-items: center;
+}
+.silhouette {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 75%;
+  
+}
+.silhouette .silhouettebox {
+  position: relative;
+  width: 750px;
+  height: 350px;
+  margin: 40px;
+}
+.silhouette .silhouettebox video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99.9%;
+ height: 99.9%;
+ object-fit: cover;
+}
+.silhouette .silhouettebox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+ height: 100%;
+  object-fit: cover;
+ mix-blend-mode: screen;
+ 
+}
+/*////////////////////////////////EARTH TV//////////////////////*/
+#earthtv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50vh;
+	transform-style: preserve-3d;
+	width: 25%;
+}
+.earth {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background: url(img/earth.jpg);
+	background-size: cover;
+	background-repeat: repeat-x;
+	box-shadow: inset 0 0 20px rgba(0,0,0,1), 0 0 50px #78e4e4;
+	animation: earthrotate 15s linear infinite;
+}
+@keyframes earthrotate
+{
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: -896px 0;
+	}
+}
+.circleearth {
+	transform-style: preserve-3d;
+	animation: textrotate 10s linear infinite;
+}
 
-
-
-
-
-
-
-
+.circleearth span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: white;
+	color: black;
+	font-size: 2em;
+	transform-origin: center;
+	transform-style: preserve-3d;
+	padding: 5px 11px;
+	transform: rotateY(calc(var(--i) * calc(360deg / 30)))
+	translateZ(200px);
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+}
+@keyframes textrotate
+{
+	0% {
+		transform: perspective(1000px) rotateY(360deg) rotateX(15deg) translateY(-30px);
+	}
+	100% {
+		transform: perspective(1000px) rotateY(0deg) rotateX(15deg) translateY(-30px);
+	}
+}
+/*.circleearth span::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+	transform: translateZ(-5px);
+}*/
 
 
 
