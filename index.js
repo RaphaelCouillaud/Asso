@@ -650,6 +650,29 @@ $(window).scroll(function() {
   }
 
 });
+////////////////////////////////////////////////////////////////////////////
+//INTERSECTION OBSERVER hori//
+const ratio = 0.1
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: ratio
+}
+const handleIntersect = function (entries, observer) {
+	entries.forEach(function (entry) {
+		if (entry.intersectionRatio > ratio) {
+			entry.target.classList.add('reveal-visible')
+			observer.unobserve(entry.target)			
+		}
+		})
+}
+const observerIntersect = new IntersectionObserver(handleIntersect, options);
+document.querySelectorAll('[class*="reveal-"]').forEach(function (revealTitle) {
+	observerIntersect.observe(revealTitle)
+})
+///////////////////////////////////////////////////////////////
+
+
 
 // SCROLL TO TOP //
 const toTop = document.querySelector(".to-top");
