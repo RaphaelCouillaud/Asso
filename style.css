@@ -530,10 +530,10 @@ box-shadow: 0px -25px 10px 10px black;
 	background-position: center;
 	background-size: cover;
 	max-width: 350px;
-	min-height: 350px;
-	margin: 0 20px;
-	background-color: transparent;
-    padding-bottom: 50px;
+	min-height: 400px;
+	margin: 25px;
+	background-color: transparent;   
+    
 }
 /*.swiper-container-3d .swiper-slide-shadow-left {
     background-image: none;
@@ -550,11 +550,13 @@ box-shadow: 0px -25px 10px 10px black;
 	width: 100%;
 	margin: 0 auto;
 	background-color: rgba(0, 0, 0, 0.25);
-	padding: 60px 0px;
+	padding: 10px 0px;
 	text-align: center;
-	overflow: hidden;
-	max-height: 450px;
+	overflow: hidden;	
 	height: 450px;
+	max-height: 450px;
+	-webkit-box-reflect: below 1px linear-gradient(transparent 90%, #085c74);
+	
 }
 .testimonials .card .content {
 	position: relative;
@@ -562,19 +564,23 @@ box-shadow: 0px -25px 10px 10px black;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	margin: auto;
 }
 .testimonials .card .content p {
 	font-size: 1.25em;
-	padding: 0 7px;
+	padding: 0px;
 	font-style: italic;
+	margin: auto;
+	padding: 20px 5px 5px 5px;
 }
 .checklogo {
   position: absolute;
   width: 75px;
   height: 75px;
   object-fit: cover;
-  top: -60px;
-  right: 0;
+  top: 100px;
+  right: 75px;
+  z-index: 10;  
 }
 
 /*.swiper-pagination-bullet {
@@ -585,26 +591,34 @@ box-shadow: 0px -25px 10px 10px black;
 	width: 150px;
 	height: 150px;
 	object-fit: cover;
-	margin: 0 auto;
+	margin: 5px auto;
 	border-radius: 50%;
 	overflow: hidden;
-	border: 8px solid transparent;
+	border: 5px solid transparent;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.25);
 	filter: grayscale(1);
+	
 }
 .testimonials .card .content h3 {
 	font-size: 2.5em;
 	font-family: 'Pirata One', Helvetica, Arial, sans-serif;
 	color: transparent;
-	-webkit-text-stroke: 0.25px white;
+	-webkit-text-stroke: 0.15px white;
 	transition: all 0.5s ease-in-out;
+	margin: auto;
+	padding-top: 20px;
 }
-.testimonials .card:hover .content h3, .testimonials .card:hover .content p {	
-	color: white;
+.testimonials .card:hover .content h3 {	
+	color: black;
+	font-weight: bolder;
+
 }
 .testimonials .card:hover .content .imgswiper {	
 	filter: grayscale(0);
-	border: 8px solid white;
+	border: 5px solid white;
+}
+.testimonials .card:hover .checklogo {
+	filter: invert(1);
 }
 .testimonials .card .water-effect {
 	position: absolute;
@@ -981,7 +995,72 @@ box-shadow: 1px 1px 20px 7px black;
 	margin-left: -80%;
 }
 
+/*///////////////////////////ACTIONS INDIVIDUELLES/////////////////////*/
+#actionsindividuelles {
+  position: relative;   
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  
+  width: 100%;    
+padding: 50px 0;
+}
+#actionsindividuelles h2 {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+ font-size: 4em;
+    font-family: 'Pirata One', Helvetica, Arial, sans-serif;
+}
+#actionsindividuelles p {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+ font-size: 1.5em; 
+}
+.actionsindiv {
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+.actionsindivoptions {
+	width: 40%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
 
+}
+.actionsindivoptions h3, .actionsindivoptions p {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+/*///////////////////////////PORTRAIT PROFESSIONNEL/////////////////////*/
+#portraitramasseur {
+  position: relative;   
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  
+  width: 100%;    
+padding: 50px 0;
+}
+#portraitramasseur h2 {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+ font-size: 4em;
+    font-family: 'Pirata One', Helvetica, Arial, sans-serif;
+}
+#portraitramasseur p {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+ font-size: 1.5em; 
+}
 /*//////////////////////////////FAQ//////////////////////*/
 #faqsection {
   position: relative;   
@@ -1054,7 +1133,6 @@ text-orientation: upright;
 /*mix-blend-mode: hard-light;*/
 backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
-  border-radius: 30px;
 
 }
 .questions-faq p {
