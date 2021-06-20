@@ -39,6 +39,41 @@ window.addEventListener('scroll', () => {
  piles2.style.left = value * 3 + 'px';
  
  });
+// PARALLAX SCROLL HEADER MEDIA PHONE//
+let bird1media = document.getElementById('bird1media');
+let bird2media = document.getElementById('bird2media');
+let butterfliesmedia = document.getElementById('butterfliesmedia');
+let cloud1media = document.getElementById('cloud1media');
+let cloud2media = document.getElementById('cloud2media');
+let sunmedia = document.getElementById('sunmedia');
+let backmedia = document.getElementById('backmedia');
+let plantsmedia = document.getElementById('plantsmedia');
+let turtlemedia = document.getElementById('turtlemedia');
+let fishmedia = document.getElementById('fishmedia');
+let piles1media = document.getElementById('piles1media');
+let piles2media = document.getElementById('piles2media');
+let watermedia = document.getElementById('watermedia');
+
+window.addEventListener('scroll', () => {
+ let valuemedia = window.scrollY;
+ bird1media.style.top = valuemedia * -50 + 'px';
+ bird1media.style.left = valuemedia * -22.25 + 'px';
+ bird2media.style.top = valuemedia * -50 + 'px';
+ bird2media.style.left = valuemedia * 5 + 'px';
+ butterfliesmedia.style.top = valuemedia * -1 + 'px';
+ butterfliesmedia.style.left = valuemedia * 1 + 'px';
+ cloud1media.style.left = valuemedia * -2 + 'px';
+ cloud2media.style.left = valuemedia * 5 + 'px';
+ sunmedia.style.left = valuemedia * -0.5 + 'px';
+ sunmedia.style.top = valuemedia * 0.25 + 'px'; 
+ backmedia.style.top = valuemedia * -0.15 + 'px';
+ plantsmedia.style.top = valuemedia * 0.025 + 'px';
+ fishmedia.style.left = valuemedia * 0.55 + 'px';
+ turtlemedia.style.left = valuemedia * -0.5 + 'px';
+ piles1media.style.left = valuemedia * -12 + 'px';
+ piles2media.style.left = valuemedia * 12 + 'px';
+ 
+ });
 //MENU BURGER ANIMATION //
 const menuAnim = document.querySelector('.menu-toggle');
 let openMenu = false;

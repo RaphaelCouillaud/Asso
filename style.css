@@ -3,7 +3,13 @@ blue #b8ecf4 - rgba(185, 217, 235, 1)
 vert #085c74 - rgba(8, 92, 116, 1)
 green #50c45c - rgba(80, 196, 92, 1)
 marron #58340c - rgba(88, 52, 12, 1) */
-
+@font-face {
+font-family: 'SEGA';
+src : url('SEGA.eot') format('eot'),
+url('SEGA.woff') format('woff'),
+url('SEGA.ttf') format('ttf'),
+url('SEGA.svg') format('svg');
+}
 html {
 scroll-behavior: smooth;
 /* Disables pull-to-refresh but allows overscroll glow effects. */
@@ -216,7 +222,12 @@ h1 {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;*/
 }
-
+#sunmedia, #cloud1media, #cloud2media, #bird1media, #bird2media, #backmedia {
+  display: none;
+}
+#plantsmedia, #butterfliesmedia, #watermedia, #turtlemedia, #fishmedia, #piles1media, #piles2media {
+  display: none;
+}
 /*/////////////////////////////////////COUNTDOWN//////////////////////////////////*/
 #actioncounter {
   text-decoration: none;
@@ -439,7 +450,7 @@ animation: rota 4s linear infinite;
 }
 #op-3-text {
   background-image: linear-gradient(180deg, 
-        rgba(8, 92, 116, 0.5) 0%, rgba(120, 228, 228, 0.5) 100%), url("https://scontent.fcdg1-1.fna.fbcdn.net/v/t1.6435-9/166583532_5272707842802735_8765654877895691583_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=b9115d&_nc_ohc=-9HMDJzrnv8AX_DszIk&_nc_ht=scontent.fcdg1-1.fna&oh=3729ff3142ac2abcce7127ebf9f1e551&oe=60CD9E9E");
+        rgba(8, 92, 116, 0.5) 0%, rgba(120, 228, 228, 0.5) 100%), url("https://scontent.fcdg2-1.fna.fbcdn.net/v/t1.6435-9/166583532_5272707842802735_8765654877895691583_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=b9115d&_nc_ohc=k-CfCWKCMd4AX84g9dk&_nc_ht=scontent.fcdg2-1.fna&oh=14a73d709672b16c252acbb35754cf1d&oe=60D38D5E");
   background-position: 25% 25%;
 }
 #op-4-text {
@@ -486,7 +497,6 @@ background-size: contain;
 background-attachment: scroll;
 background-repeat: repeat;
 padding: 50px 0;
-box-shadow: 0px -25px 10px 10px black;
 }
 
 #introtemoignages {
@@ -1375,6 +1385,25 @@ backdrop-filter: blur( 4px );
 }
 
 /*//////////////////////POUVOIRS PUBLICS//////////////////////////*/
+#bandeau {
+	position: relative;   
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+}
+#bandeau div {	
+  width: 33.3333%; 
+}
+#bandeau div:nth-child(1) {
+	background: #0050a4;
+}
+#bandeau div:nth-child(2) {
+	background: #FFFFFF;
+}
+#bandeau div:nth-child(3) {
+	background: #EF4135;
+}
 #mairies {
   position: relative;   
   display: flex;
@@ -1383,7 +1412,8 @@ backdrop-filter: blur( 4px );
   max-width: 100%;
   padding: 50px;
   align-items: center;
-  background: black;
+  background: white;
+  color: black;
 }
 #intromairies {
   width: auto;
@@ -1446,12 +1476,11 @@ article {
     max-width: 100%;
   padding: 50px;
   align-items: center;
-  background-image: linear-gradient(90deg,
-         rgba(8, 92, 116, 0.5), 
-        rgba(0, 0, 0, 0.5)
-      ), url("img/presse/oldpaper.jpg"); 
+  background: url("img/presse/oldpaper.png"), white; 
   background-size: cover;
-background-repeat: repeat;
+background-repeat: no-repeat;
+min-height: 100vh;
+ 
 }
 #intropresse {
   width: auto;
@@ -1484,6 +1513,7 @@ text-orientation: upright;*/
   text-align: center;
   align-items: center;
   padding: 25px;
+  color: black;
 }
 .articlepresse h2, .articlepresse p, .articlepresse img {
   margin: auto;
@@ -1508,7 +1538,7 @@ text-orientation: upright;*/
 
 }
 .articlepresse:hover img {
-  opacity: 0.25;
+  opacity: 0.4;
   filter: grayscale(1);
   transition: all 0.5s;
 }
@@ -1521,9 +1551,18 @@ text-orientation: upright;*/
   flex-direction: row;  
   justify-content: space-evenly;  
   width: 100%;
+  min-height: 100vh;
   padding: 50px;
   align-items: center;
   background: #b8ecf4;
+   background-image: linear-gradient(0deg,
+         rgba(8, 92, 116, 0.25), 
+        rgba(0, 0, 0, 0.75)
+      ), url("img/tvscreen.png"), url("img/vidgif1.gif"); 
+  background-size: cover;
+background-repeat: repeat;
+background-attachment: fixed;
+box-shadow: inset 0 60px 30px -15px rgba(0, 0, 0, 0.85);
 }
 .silhouette {
   display: flex;
@@ -1540,6 +1579,7 @@ text-orientation: upright;*/
    width: 640px;
   height: 480px;
   margin: 35px;
+  box-shadow: 12px 12px 8px 5px rgba(0, 0, 0, 0.85);
 }
 .silhouette .silhouettebox video {
   position: absolute;
@@ -1548,7 +1588,7 @@ text-orientation: upright;*/
   width: 99.9%;
  height: 99.9%;
  object-fit: cover;
- -webkit-box-reflect: below 1px linear-gradient(transparent 66%, #085c74);
+/* -webkit-box-reflect: below 1px linear-gradient(transparent 66%, #085c74);*/
 }
 .silhouette .silhouettebox img {
   position: absolute;
@@ -1645,7 +1685,7 @@ text-orientation: upright;*/
 }
 
 
-/*-------------------------------------INTERSECTION OBSERVER x----------------------------------*/
+/*/////////////////////////////INTERSECTION OBSERVER x////////////////////////////////*/
 [class*="reveal-"] {
   opacity: 0;
   transform: translateY(50px);
@@ -1679,9 +1719,82 @@ text-orientation: upright;*/
 .reveal-8 {
   transition-delay: 0.85s;
 }
+/*/////////////////////////////INFINITE TEXT HORIZONTAL////////////////////////////////*/
+#breakingnews {
+  position: relative;
+  width: 100%;
+}
+#breakingnews img {
+  position: absolute; 
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 100px;
+  border: 5px solid red;
+  animation: disappeared 0.85s both infinite;
+  -moz-animation: disappeared 0.85s both infinite;
+  -webkit-animation: disappeared 0.85s both infinite;
+  -o-animation: disappeared 0.85s both infinite;
+  -ms-animation: disappeared 0.85s both infinite;
+}
+@keyframes disappeared {
+  0% {
+      opacity: 1;
+      box-shadow: 0.2px 0.2px 5px 2px red;
+    }
+    20% {
+      opacity: 1;
+      box-shadow: 1px 1px 20px 7px red;
+    }
+    100% {
+      opacity: 1;
+      box-shadow: 0.2px 0.2px 5px 2px red;
+    }
+}
 
-
-
+/* le block conteneur */
+.marquee {
+  width: 100%;      /* largeur de la fenêtre */ 
+  letter-spacing: 0.25em;
+  height: 80px;  
+  overflow: hidden;  /* masque tout ce qui dépasse */
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .5), inset 0 0 1em .25em black;
+  background: black;
+  background-size: cover;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  display: flex;
+}
+/* le bloc défilant Le bloc défilant doit être un modèle de boîte en ligne n'autorisant 
+pas le renvoi à la ligne et être placé à droite du conteneur.
+L'animation proprement dite est définie en utilisant la propriété animation.*/
+.marquee > :first-child {
+  display: inline-block;              /* un peu d'espace pour la transition */
+  padding-left: 100%;                   /* placement à droite du conteneur */
+  white-space: nowrap;                  /* pas de passage à la ligne */
+  animation: defilement 12s infinite linear;
+  animation-timing-function: cubic-bezier(0.25, 0.5, 0.8, 0.5);
+}
+@keyframes defilement {
+  0% {
+    transform: translate3d(20px,0,0);      /* position initiale à droite */
+  }
+  100% {
+    transform: translate3d(-100%,0,0);  /* position finale à gauche */
+  }
+}
+#breaking {
+  margin: auto;
+  font-size: 2.25em;
+text-shadow: 0 0 10px red, 0 0 15px red, 0 0 20px red, 0 0 35px red, 0 0 50px red, 0 0 70px red;
+}
+#breaking strong {
+  font-family: 'Pirata One', Helvetica, Arial, sans-serif;
+ font-size: 1.1em;  
+  line-height: 1.075em;
+  color: white;
+}
 
 
 
@@ -1696,9 +1809,61 @@ text-orientation: upright;*/
 
 
 
-
-
-
+/*-------------------------------RÉSEAUX SOCIAUX-------------------------*/
+#socialnetworks {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0;
+	
+}
+#socialnetworks li {
+	list-style: none;
+	margin: 0 10px;
+	display: inline-block;
+}
+#socialnetworks li a {
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 60px;
+	display: inline-block;
+	margin: auto;
+	transition: 0.5s ease-in-out;
+	background: #f1f1f1;
+	overflow: hidden;
+}
+#socialnetworks li a i {
+	display: block;
+	width: 100%;
+	color: #777;
+	transition: 0.5s ease-in-out;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#socialnetworks li:hover a i:nth-child(1) {
+	transform: translateY(-70px);
+}
+#socialnetworks li:hover a i:nth-child(2) {
+	transform: translateY(-70px);
+	color: #fff;
+}
+#socialnetworks li:hover:nth-child(1) a{
+	background: #1877f2;
+}
+#socialnetworks li:hover:nth-child(2) a{
+	background: #c32aa3;
+}
+#socialnetworks li:hover:nth-child(3) a{
+	background: #1da1f2;
+}
+#socialnetworks li:hover:nth-child(4) a{
+	background: #ff0000;
+}
 /*-------------------------------NAV FOOTER-------------------------*/
 .to-top {
 position: fixed;
@@ -1724,7 +1889,7 @@ text-shadow: -1px 0 2px white, 0 1px 2px white, 1px 0 2px white, 0 -1px 10px whi
 color: #085c74;
 }
 footer {   
-height: 325px;
+min-height: 400px;
 display: flex;
 text-align: center;
 position: relative;
@@ -1732,26 +1897,29 @@ background-image: url("img/footer.png");
 background-attachment: scroll;
 background-size: cover;
 background-repeat: repeat;
-background-position: center ;
+background-position: bottom;
 padding-top: 50px;
 position: relative;
-font-family: 'Audiowide', cursive;
   
 }
 footer p {
 color: white;
-font-weight: bolder;
 margin: auto;
+display: flex;
+flex-direction: row;
 position: absolute;
 bottom: 0%;
 left: 50%;
 transform: translate(-50%, -50%);
+align-content: center;
+align-items: center;
 }
 footer p strong {
 font-family: 'SEGA', 'Audiowide', Helvetica, Arial, sans-serif;
 color: #bc040c;
-letter-spacing: 0.5px;
 font-weight: lighter;
+  letter-spacing: 0.1em;
+  padding-top: 2px;
 }
 
 /*-------------------------------MEDIA QUERIES-------------------------*/
@@ -1784,5 +1952,49 @@ font-weight: lighter;
     nav ul li ul li {
     width: 100%;   
   }
+#parallax {
+  position: relative;
+  width: 100%;
+  min-height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#parallax::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  /*background: linear-gradient(to top, #085c74, transparent);*/
+  background-image: linear-gradient(
+        180deg,         
+        transparent 75%,        
+        #085c74 100%);
+  z-index: 10;
+}
+#parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+ min-height: 100vh;
+  pointer-events: none;
+  object-fit: cover;
+}
+#sunmedia, #cloud1media, #cloud2media, #bird1media, #bird2media, #backmedia {
+  display: flex;
+}
+#plantsmedia, #butterfliesmedia, #watermedia, #turtlemedia, #fishmedia, #piles1media, #piles2media {
+  display: flex;
+}
+#sun, #cloud1, #cloud2, #bird1, #bird2, #back {
+  display: none;
+}
+#plants, #butterflies, #water, #fish, #piles1, #piles2 {
+  display: none;
+}
+
 }
 
