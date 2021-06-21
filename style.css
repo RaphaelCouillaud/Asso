@@ -189,6 +189,9 @@ background-position: top center;
   pointer-events: none;
   object-fit: cover;
 }
+#watermedia {
+  display: none;
+}
 h1 {
   position: absolute;
   color: white;
@@ -222,10 +225,7 @@ h1 {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;*/
 }
-#sunmedia, #cloud1media, #cloud2media, #bird1media, #bird2media, #backmedia {
-  display: none;
-}
-#plantsmedia, #butterfliesmedia, #watermedia, #turtlemedia, #fishmedia, #piles1media, #piles2media {
+#textmedia {
   display: none;
 }
 /*/////////////////////////////////////COUNTDOWN//////////////////////////////////*/
@@ -721,6 +721,142 @@ padding: 50px 0;
 .textcounter {
   font-size: 2em;
 }
+/*///////////////////////////ACTUALITES/////////////////////*/
+#actus {
+  position: relative;   
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  
+  width: 100%;  
+    background-image: linear-gradient(
+        rgba(80, 196, 92, 0.75), 
+        rgba(120, 228, 228, 0.75)
+      ), url("img/background.png");  
+background-size: cover;
+background-attachment: fixed;
+background-repeat: repeat;
+background-position: top center;
+padding: 50px 0;
+}
+#h2actus {
+  margin: 0 auto;
+  text-align: center;
+   width: 100%; 
+    font-size: 4em;
+    font-family: 'Pirata One', Helvetica, Arial, sans-serif;
+}
+
+.container-actus {
+    width: 80%;
+    max-width: 900px;
+    min-width: 700px;
+    height: auto;
+    margin: 10px auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.news-actus {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+.visible-pannel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5), 0 0 100px 100px rgba(0, 0, 0, 0.1);  
+  background: rgba( 255, 255, 255, 0.25 );
+ border-radius: 30px;
+    position: relative;
+    z-index: 100;
+    backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(4px);
+}
+.visible-pannel h2 {
+    margin-left: 10px;
+    padding: 15px 5px;
+    font-size: 2.5em;
+      font-family: 'Pirata One', Helvetica, Arial, sans-serif;
+       text-align: center;
+        margin: 0 auto;
+  text-align: center;
+   width: 100%; 
+}
+.visible-pannel h2 .fa-bell{
+  color: red;
+  -webkit-text-stroke: 2px white;
+   animation: alarm 0.85s both infinite;
+  -moz-animation: alarm 0.85s both infinite;
+  -webkit-animation: alarm 0.85s both infinite;
+  -o-animation: alarm 0.85s both infinite;
+  -ms-animation: alarm 0.85s both infinite;
+}
+@keyframes alarm {
+  0% {
+      opacity: .2;
+    }
+    20% {
+      opacity: 1;
+      text-shadow: 0 0 10px red, 0 0 15px red, 0 0 20px red, 0 0 35px red, 0 0 50px red, 0 0 70px red;
+    }
+    100% {
+      opacity: .2;
+    }
+}
+.visible-pannel h2 i{
+  margin-right: 10px;
+}
+.visible-pannel h2 .fa-file-signature{
+  color: gold;
+  -webkit-text-stroke: 2px black;
+}
+.visible-pannel h2 .fa-recycle{
+  color: green;
+  -webkit-text-stroke: 2px black;
+}
+.visible-pannel h2 .fa-comments{
+  color: blue;
+  -webkit-text-stroke: 2px black;
+}
+.visible-pannel img {
+    margin-right: 20px;
+    width: 25px;
+    cursor: pointer;
+}
+.toggle-pannel {
+    padding: 0px 15px;
+    height: 0px;
+    opacity: 0;
+}
+.toggle-pannel h3 {
+    font-size: 1.25em;
+    padding-bottom: 10px;
+}
+.toggle-pannel p {
+    line-height: 1.5;
+}
+#recruit {
+  display: flex;
+  flex-direction: row-reverse;  
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+#recruit img {
+  margin: auto;
+  margin-right: 25px;
+  width: 200px;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+#recruit img:hover {
+  transform: scale(1.5);
+}
+#recruit h3 {
+  margin: auto;
+}
+
 /*///////////////////////////ACTIONS FUTURES/////////////////////*/
 #actionsfutures {
   position: relative;   
@@ -1086,14 +1222,15 @@ figure {
 	margin-left: -80%;
 }
 
-/*///////////////////////////ACTIONS INDIVIDUELLES/////////////////////*/
+/*/////////////////ACTIONS INDIVI////////////////////*/
 #actionsindividuelles {
   position: relative;   
   display: flex;
   flex-direction: column;
   justify-content: space-around;  
   width: 100%;    
-padding: 50px 0;
+padding: 25px 0;
+border: 3px solid red;
 }
 #actionsindividuelles h2 {
   margin: auto;
@@ -1110,6 +1247,173 @@ padding: 50px 0;
   text-align: center;
  font-size: 1.5em; 
 }
+.textCentre {
+    text-align: center;
+}
+.margBot {
+    margin-bottom: 2rem;
+}
+.rowApropos {
+   display: flex;
+   width: 100rem;
+   margin: 0 auto;
+}
+.rowApropos .doubleCol {
+    width: calc((100% - 6rem) / 2);
+    margin: 40px;
+}
+.headingTxt {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: 'Pirata One', Helvetica, Arial, sans-serif;
+    letter-spacing: 0.05em;
+}
+.margBotSm {
+    margin-bottom: 1.5rem;
+}
+.paragraphe {
+    font-size: 1.5em;
+    margin-bottom: 3rem;
+}
+
+.btn-text {
+    font-size: 1.6rem;
+    color: #373737;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #C0B283;
+    padding: 3px;
+    transition: all .2s;
+}
+.btn-text:hover {
+    background-color: #373737;
+    color: #C0B283;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+.btn-text:active {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    transform: translateY(0);
+}
+.composition  {
+    position: relative;
+    margin-top: 2.8rem;
+    margin-right: 25px;   
+}
+.composition__photo {
+    width: 40%;
+    max-width: 480px;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+    outline-offset: 0.5rem;
+}
+.composition__photo--p1 {
+    left: -10%;
+    top: 3rem;
+}
+.composition__photo--p2 {
+    left: 20%;
+    top: 12rem; 
+}
+.composition__photo--p3 {
+      right: 10%;
+    top: 32rem;
+     width: 60%;
+    max-width: 600px;
+    z-index: 0;
+}
+.composition__photo--p4 {
+   right: 5%;
+    top: 8rem;      
+}
+.composition__photo--p5 {
+      left: -15%;
+    top: 28rem;
+}
+.composition__photo--p6 {
+      
+     right: 40%;
+    top: 40rem;   
+}
+.composition__photo:hover {
+    outline: 0.5rem solid white;
+    transform: scale(1.1) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0,0,0,0.5);
+    z-index: 20;
+    
+}
+.composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.9);
+}
+#credits {
+  display: flex;
+  justify-content: center;
+}
+#credits p {
+  margin: auto;
+  font-size: 1em;
+  font-style: italic;
+  text-align: right;
+}
+/*-------------------------------------SECTION SKILLS-----------------------------------*/
+
+.container {
+width: 100%;
+margin: 20px auto;
+}
+#skill-bars {
+padding: 8px 15px;
+width: 66%;
+background: rgba(0, 0, 0, 0.65);  
+margin: auto;
+margin-top: 10px;  
+}
+.bar {
+width: 100%;
+height: 12px; 
+background: transparent;
+position: relative; 
+border-radius: 30px;
+box-shadow: inset 0 2px 2px rgba(0,0,0,0.05),
+              0 2px rgba(255,255,255,0.8);  
+}
+.bar:first-child {
+margin-top: 0px;
+}
+.info {
+border-radius: 30px;  
+width: 0%;
+opacity: 0;
+position: relative;
+height: 100%;
+transition: all cubic-bezier(1,0,0.5,1) 1.5s;
+}
+#info1{
+background-image: linear-gradient(90deg, green 0%, yellow 70%, transparent 100%);
+}
+#info2{
+background-image: linear-gradient(90deg, green 0%, yellow 50%, orange 80%, transparent 100%);
+}
+.info span {   
+text-shadow: 3px 0 #bc040c;
+color: white;     
+position: absolute;
+top: -40px;
+right: 0; 
+font-size: 1.5em;
+}
+#skill-bars p {
+color: white;     
+margin-bottom: 50px;
+font-size: 1.25em;
+}
+
+/*///////////////////////////ACTIONS INDIVIDUELLES/////////////////////*/
+
+
 .actionsindiv {
 	width: 100%;
 	margin: auto;
@@ -1163,6 +1467,7 @@ padding: 50px 0;
   font-size: 4em;
     font-family: 'Pirata One', Helvetica, Arial, sans-serif;
     padding-bottom: 25px;
+     padding-top: 25px;
 }
 #introadmin p { 
   font-size: 1.5em;
@@ -1551,7 +1856,7 @@ text-orientation: upright;*/
   flex-direction: row;  
   justify-content: space-evenly;  
   width: 100%;
-  min-height: 100vh;
+  min-height: 110vh;
   padding: 50px;
   align-items: center;
   background: #b8ecf4;
@@ -1760,7 +2065,7 @@ box-shadow: inset 0 60px 30px -15px rgba(0, 0, 0, 0.85);
   height: 80px;  
   overflow: hidden;  /* masque tout ce qui dépasse */
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .5), inset 0 0 1em .25em black;
-  background: black;
+  background-image: linear-gradient(90deg, red 0%, blue 100%);
   background-size: cover;
   border-top: 5px solid white;
   border-bottom: 5px solid white;
@@ -1787,7 +2092,7 @@ L'animation proprement dite est définie en utilisant la propriété animation.*
 #breaking {
   margin: auto;
   font-size: 2.25em;
-text-shadow: 0 0 10px red, 0 0 15px red, 0 0 20px red, 0 0 35px red, 0 0 50px red, 0 0 70px red;
+text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
 }
 #breaking strong {
   font-family: 'Pirata One', Helvetica, Arial, sans-serif;
@@ -1966,7 +2271,7 @@ font-weight: lighter;
   bottom: 0px;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 20vh;
   /*background: linear-gradient(to top, #085c74, transparent);*/
   background-image: linear-gradient(
         180deg,         
@@ -1979,22 +2284,117 @@ font-weight: lighter;
   top: 0;
   left: 0;
   width: 100%;
- min-height: 100vh;
+ min-height: 20vh;
   pointer-events: none;
   object-fit: cover;
 }
-#sunmedia, #cloud1media, #cloud2media, #bird1media, #bird2media, #backmedia {
-  display: flex;
-}
-#plantsmedia, #butterfliesmedia, #watermedia, #turtlemedia, #fishmedia, #piles1media, #piles2media {
-  display: flex;
-}
-#sun, #cloud1, #cloud2, #bird1, #bird2, #back {
+#water {
   display: none;
 }
-#plants, #butterflies, #water, #fish, #piles1, #piles2 {
+#watermedia {
+  display: flex;
+}
+#piles1 {
+  margin-left: -50px;
+  margin-top: 25px;
+}
+#piles2 {
+  margin-top: 25px;
+}
+#butterflies {
+  
+  margin-top: -350px;
+}
+#text {
   display: none;
 }
-
+#textmedia {
+  position: absolute;
+ top: 17%;
+  left: 0%;
+  display: flex;
+  width: 100%;
+  z-index: -1;
+}
+#textmedia h2 { 
+  text-align: center;
+  color: white;
+  font-family: 'Pirata One', Helvetica, Arial, sans-serif;
+  margin: auto;
+  -webkit-text-stroke: 2px black;
+  letter-spacing: 0.05em;
+  line-height: 1.075em;
+  font-size: 7em;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+#bird1 {
+  margin-left: 150px;
+}
+#cloud2 {
+  margin-top: -50px;
+}
+#text {
+  margin-bottom: 250px;
+  -webkit-text-stroke: 2px black;  
+  font-size: 5em;
+}
+.countdown div {  
+  width: 50px;
+  height: 30px;
+  line-height: 30px;  
+  margin: 0 5px;
+  text-shadow: -3px 0 6px #088404, 0 3px 6px #088404, 3px 0 6px #088404, 0 -3px 40px #088404; 
+-webkit-text-stroke: 1px #088404;
+}
+.countdown div:before {  
+  bottom: -30px;
+  left: 0;
+  height: 25px;
+ 
+  line-height: 25px;  
+}
+.dotscountdown {
+  font-size: 1.25em; 
+}
+main {
+ font-size: 0.75em;
+}
+#logocitation {  
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+#logodiv img {
+  width: 200px;
+}
+#logodiv, #citation {
+  width: 40%;
+}
+.op-text p {
+  font-size: 1.5em;
+  width: 75%;
+}
+.op-text h3 {
+  padding-top: 75px;
+  font-size: 2.5em;
+}
+#actionsfutures {
+   
+background-size: 50%;
+}
+.rowApropos {
+display: flex;
+flex-direction: column;
+width: 40rem;
+height: 75rem;
+}
+.rowApropos .doubleCol {
+width: 40em;
+margin: 0 auto;
+}
+.rowApropos .doubleCol:nth-child(2) {
+  padding-top: 5rem;
+}
 }
 

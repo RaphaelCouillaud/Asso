@@ -15,6 +15,7 @@ let fish = document.getElementById('fish');
 let piles1 = document.getElementById('piles1');
 let piles2 = document.getElementById('piles2');
 let water = document.getElementById('water');
+let watermedia = document.getElementById('watermedia');
 
 window.addEventListener('scroll', () => {
  let value = window.scrollY;
@@ -36,44 +37,9 @@ window.addEventListener('scroll', () => {
  fish.style.left = value * 0.55 + 'px';
  turtle.style.left = value * -0.5 + 'px';
  piles1.style.left = value * -3 + 'px';
- piles2.style.left = value * 3 + 'px';
- 
+ piles2.style.left = value * 3 + 'px'; 
  });
-// PARALLAX SCROLL HEADER MEDIA PHONE//
-let bird1media = document.getElementById('bird1media');
-let bird2media = document.getElementById('bird2media');
-let butterfliesmedia = document.getElementById('butterfliesmedia');
-let cloud1media = document.getElementById('cloud1media');
-let cloud2media = document.getElementById('cloud2media');
-let sunmedia = document.getElementById('sunmedia');
-let backmedia = document.getElementById('backmedia');
-let plantsmedia = document.getElementById('plantsmedia');
-let turtlemedia = document.getElementById('turtlemedia');
-let fishmedia = document.getElementById('fishmedia');
-let piles1media = document.getElementById('piles1media');
-let piles2media = document.getElementById('piles2media');
-let watermedia = document.getElementById('watermedia');
 
-window.addEventListener('scroll', () => {
- let valuemedia = window.scrollY;
- bird1media.style.top = valuemedia * -50 + 'px';
- bird1media.style.left = valuemedia * -22.25 + 'px';
- bird2media.style.top = valuemedia * -50 + 'px';
- bird2media.style.left = valuemedia * 5 + 'px';
- butterfliesmedia.style.top = valuemedia * -1 + 'px';
- butterfliesmedia.style.left = valuemedia * 1 + 'px';
- cloud1media.style.left = valuemedia * -2 + 'px';
- cloud2media.style.left = valuemedia * 5 + 'px';
- sunmedia.style.left = valuemedia * -0.5 + 'px';
- sunmedia.style.top = valuemedia * 0.25 + 'px'; 
- backmedia.style.top = valuemedia * -0.15 + 'px';
- plantsmedia.style.top = valuemedia * 0.025 + 'px';
- fishmedia.style.left = valuemedia * 0.55 + 'px';
- turtlemedia.style.left = valuemedia * -0.5 + 'px';
- piles1media.style.left = valuemedia * -12 + 'px';
- piles2media.style.left = valuemedia * 12 + 'px';
- 
- });
 //MENU BURGER ANIMATION //
 const menuAnim = document.querySelector('.menu-toggle');
 let openMenu = false;
@@ -161,6 +127,31 @@ show4.onclick = function(){
 	show3.style.borderBottom = "none";
 	show4.style.borderBottom = "5px solid white";
 };
+// ACTUALITES //
+const allCross = document.querySelectorAll('.visible-pannel img');
+console.log(allCross);
+
+
+allCross.forEach(element => {
+
+    element.addEventListener('click', function(){
+
+        const height = this.parentNode.parentNode.childNodes[3].scrollHeight;
+
+        const currentChoice = this.parentNode.parentNode.childNodes[3];
+
+        // console.log(this.src);
+        if(this.src.includes('plus')){
+            this.src = 'img/minus.png';
+            gsap.to(currentChoice, {duration: 0.5, height: height + 50, opacity: 1, transition: 'ease-in-out', padding: '20px 15px'})
+        } else if (this.src.includes('minus')){
+            this.src = 'img/plus.png';
+            gsap.to(currentChoice, {duration: 0.5, height: 0, opacity: 0, transition: 'ease-in-out', padding: '0px 15px'})
+        }
+        
+    })
+
+})
 
 // HIDE SHOW ACTIONS //
 const action1 = document.getElementById('ac-1'); //options
@@ -762,7 +753,36 @@ document.querySelectorAll('[class*="reveal-"]').forEach(function (revealTitle) {
 })
 ///////////////////////////////////////////////////////////////
 
+// SKILLS BARS ANIMATION //
+const skillsSection = document.getElementById('skill-bars');
 
+const progressBars = document.querySelectorAll('.info');
+
+function showProgress() {
+  progressBars.forEach(progressBar => {
+    const valueBar = progressBar.dataset.progress;
+    progressBar.style.opacity = 1;
+    progressBar.style.width = `${valueBar}%`;
+  });
+}
+
+function hideProgress() {
+  progressBars.forEach(p => {
+    p.style.opacity = 0;
+    p.style.width = 0;
+  });
+}
+
+window.addEventListener('scroll',() => {
+  const sectionPos = skillsSection.getBoundingClientRect().top;
+  const screenPos = window.innerHeight / 1.5;
+
+  if(sectionPos < screenPos){
+      showProgress();
+  } else{
+     hideProgress();
+  }
+});
 
 // SCROLL TO TOP //
 const toTop = document.querySelector(".to-top");
