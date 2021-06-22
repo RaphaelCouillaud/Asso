@@ -151,8 +151,89 @@ allCross.forEach(element => {
         
     })
 
-})
+});
+// TYPE SCRIPT //
+let textscript1 = "Nom de code opération : Le Débarquement";
+    let array1 = Array.from(textscript1);
 
+    Object.keys(array1).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription1").innerHTML += array1[key]),
+        key * 285
+      );
+    });
+let textscript2 = "Nom de code opération : Tempête du Marais";
+    let array2 = Array.from(textscript2);
+
+    Object.keys(array2).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription2").innerHTML += array2[key]),
+        key * 290
+      );
+    });
+let textscript3 = "Nom de code opération : Le Blockhaus";
+    let array3 = Array.from(textscript3);
+
+    Object.keys(array3).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription3").innerHTML += array3[key]),
+        key * 295
+      );
+    });
+let textscript4 = "Nom de code opération : Sentiers sauvages";
+    let array4 = Array.from(textscript4);
+
+    Object.keys(array4).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription4").innerHTML += array4[key]),
+        key * 300
+      );
+    });
+let textscript5 = "Nom de code opération : Tortues Géniales";
+    let array5 = Array.from(textscript5);
+
+    Object.keys(array5).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription5").innerHTML += array5[key]),
+        key * 305
+      );
+    });
+let textscript6 = "Nom de code opération : Girl Power";
+    let array6 = Array.from(textscript6);
+
+    Object.keys(array6).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription6").innerHTML += array6[key]),
+        key * 310
+      );
+    });
+let textscript7 = "Nom de code opération : Tempête du marais II";
+    let array7 = Array.from(textscript7);
+
+    Object.keys(array7).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription7").innerHTML += array7[key]),
+        key * 315
+      );
+    });
+let textscript8 = "Nom de code opération : Sentiers sauvages II";
+    let array8 = Array.from(textscript8);
+
+    Object.keys(array8).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription8").innerHTML += array8[key]),
+        key * 320
+      );
+    });
+let textscript9 = "Nom de code opération : Ville propre";
+    let array9 = Array.from(textscript9);
+
+    Object.keys(array9).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription9").innerHTML += array9[key]),
+        key * 325
+      );
+    });
 // HIDE SHOW ACTIONS //
 const action1 = document.getElementById('ac-1'); //options
 const action2 = document.getElementById('ac-2');
