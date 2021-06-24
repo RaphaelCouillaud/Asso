@@ -169,6 +169,7 @@ background-position: top center;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 #parallax::before {
   content: '';
@@ -877,7 +878,7 @@ animation: taadaa 10s infinite;
   }
 }
 .imgaction {
-  width: 50%;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
@@ -895,6 +896,8 @@ animation: taadaa 10s infinite;
 figure {
   overflow: hidden;
   margin: 0;
+   width: 640px;
+  height: 380px;
 }
 .imgrow img {
   display: block;
@@ -916,8 +919,8 @@ figure {
   justify-content:center;
   align-items:center;
   position:absolute; 
-  top: 25%;
-  right: 25%;
+  top: 175px;
+  right: 375px;
 }
 
 .circle {
@@ -2355,6 +2358,24 @@ font-weight: lighter;
 
 /*-------------------------------MEDIA QUERIES-------------------------*/
 /*////////////////////////////////////*/
+/*----------------------------------------------------------------------*/
+@media (min-width: 1920px) and (max-width: 2560px) {
+  body {
+font-size: 1.35em;
+}
+.countdown div {  
+  width: 100px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 4em;
+}
+#intro {  
+  padding-bottom: 25px;
+}
+.container-actus {
+    max-width: 1200px;    
+}
+}
 @media (max-width: 768px) {
   .menu-toggle {   
   display: flex;
