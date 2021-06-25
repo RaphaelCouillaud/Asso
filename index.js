@@ -836,6 +836,7 @@ document.querySelectorAll('[class*="reveal-"]').forEach(function (revealTitle) {
 
 // SKILLS BARS ANIMATION //
 const skillsSection = document.getElementById('skill-bars');
+const skillsSection1 = document.getElementById('skill-bars1');
 
 const progressBars = document.querySelectorAll('.info');
 
@@ -856,9 +857,10 @@ function hideProgress() {
 
 window.addEventListener('scroll',() => {
   const sectionPos = skillsSection.getBoundingClientRect().top;
+  const sectionPos1 = skillsSection1.getBoundingClientRect().top;
   const screenPos = window.innerHeight / 1.5;
 
-  if(sectionPos < screenPos){
+  if(sectionPos < screenPos & sectionPos1 < screenPos ){
       showProgress();
   } else{
      hideProgress();
