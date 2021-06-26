@@ -57,6 +57,8 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 nav ul li {
   list-style: none;
@@ -194,10 +196,13 @@ background-position: top center;
   pointer-events: none;
   object-fit: cover;
 }
-#watermedia {
+#watermedia, #mediaphone {
   display: none;
 }
-h1 {
+#parallaxportrait {
+  display: none;
+}
+#text, #textphone {
   position: absolute;
   color: white;
   font-family: 'Pirata One', Helvetica, Arial, sans-serif;
@@ -235,12 +240,16 @@ h1 {
 }
 /*/////////////////////////////////////COUNTDOWN//////////////////////////////////*/
 #actioncounter {
+  position:absolute; 
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-decoration: none;
   display: inline-block;
   padding: 8px 10px; 
   color: white; 
 border-radius: 30px;
-  transform: translateY(200px);
+ 
   z-index: 10000;
   display: flex;
   justify-content: center;
@@ -345,7 +354,7 @@ color: white;
 	font-size: 1.75em;
   padding-top: 50px;
 }
-#intro h2 {
+h1 {
   width: 60%;
   margin: auto;
 }
@@ -405,6 +414,7 @@ animation: rota 4s linear infinite;
 
 .option-text {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
    font-family: 'Pirata One', Helvetica, Arial, sans-serif;
@@ -1275,7 +1285,85 @@ font-size: 1.25em;
 	margin: auto;
 	text-align: center;
 }
+/*///////////////////////////RAPPELS/////////////////////*/
+#rappels {  
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center; 
+    background-image: linear-gradient(         
+        rgba(46, 49, 49, 0.95),
+        rgba(255, 255, 255, 0.95)
+      ), url("img/background.png");   
+background-size: contain;
+background-repeat: repeat;
+padding: 50px 0;
+}
 
+#introrappels {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  text-align: center;
+} 
+#introrappels h2 {   
+   margin: 0 auto;
+  text-align: center;
+   width: 100%;
+  font-size: 4em;
+    font-family: 'Pirata One', Helvetica, Arial, sans-serif;   
+}   
+#introrappels p { 
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+#rappelsexemples {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+}
+.rappelsexemples1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  margin: 15px 15px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+}
+.rappelsexemples1:hover {
+  transform: scale(1.15);
+  transition: 0.5s ease-in-out;
+}
+.rappelsexemples1 i {
+  font-size: 50px;
+  color: #085c74;
+  margin: auto;
+}
+.rappelsexemples1 img {
+  width: 60px;
+  height: 50px;
+  margin: auto;
+}
+.rappelsexemples1 p {
+  font-size: 1.25em;
+  margin: auto;
+  color: black;
+}
+.rappelsexemples1 .duree {
+  font-size: 1.25em;
+  color: #085c74;
+}
 /*///////////////////////////ADMINISTRATION/////////////////////*/
 #admin {  
   display: flex;
@@ -1394,7 +1482,7 @@ padding: 50px 0;
 	box-sizing: border-box;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;	  
+	/*min-height: 100vh;	*/  
   
    background-image: linear-gradient(
          rgba(0, 0, 0, 0.95), 
@@ -2230,6 +2318,9 @@ color: white;
   background: #1da1f2;
 }
 #socialnetworks li:hover:nth-child(4) a{
+  background: #0e76a8;
+}
+#socialnetworks li:hover:nth-child(5) a{
   background: #ff0000;
 }
 /*/////////////////////FORMULAIRE////////////////////*/
@@ -2240,7 +2331,7 @@ form {
   width: 50%; 
   backdrop-filter: blur(4px);
 -webkit-backdrop-filter: blur(4px);
-box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5), 0 0 100px 100px rgba(0, 0, 0, 0.1);  
+box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5), 0 0 20px 10px rgba(0, 0, 0, 0.1);  
   background: rgba( 255, 255, 255, 0.25 );
  border-radius: 30px;
  background-image: linear-gradient(
@@ -2251,6 +2342,7 @@ background-size: cover;
 background-attachment: fixed;
 background-repeat: repeat;
 background-position: top center;
+margin-bottom: 50px;
 }
 label {
   display: block;
@@ -2340,20 +2432,24 @@ position: relative;
 padding-top: 50px;
 position: relative;
 overflow-x: hidden;
+background-color: #b8ecf4;
   
 }
 footer p {
 color: white;
 margin: auto;
-display: flex;
-flex-direction: row;
-position: absolute;
-bottom: 0%;
-left: 50%;
-transform: translate(-50%, -50%);
+
 align-content: center;
 align-items: center;
  z-index: 1000;
+}
+#mentions {
+  margin: auto;
+  width: 100%;
+  display: flex;
+flex-direction: row;
+position: absolute;
+bottom: 5%;
 }
 #lienmentions {
 text-decoration: none;
@@ -2374,7 +2470,8 @@ font-weight: lighter;
     animation-iteration-count: infinite;
     bottom: 0;
     margin-left: -200px;
-    z-index: 3;
+    z-index: 30;
+    
    }
    @keyframes example1 {
     0%   {left:0px;}
@@ -2389,7 +2486,7 @@ font-weight: lighter;
     animation-iteration-count: infinite;
     bottom: 0;
     margin-left: -200px;
-    z-index: 2;
+    z-index: 20;
    }
   @keyframes example2 { 
     0%   {left:0px;}
@@ -2406,7 +2503,7 @@ font-weight: lighter;
     animation-iteration-count: infinite;
     bottom: 0;
     margin-right: -200px;
-    z-index: -2;
+    z-index: 12;
    }
    @keyframes example3 {
     0%   {right:0px;}
@@ -2547,7 +2644,7 @@ background-repeat: repeat;
   nav {
  width: 90%;
 }
-
+/*
 #parallax {
   position: relative;
   width: 100%;
@@ -2566,7 +2663,7 @@ background-repeat: repeat;
   width: 100%;
   height: 50vh;
   /*background: linear-gradient(to top, #085c74, transparent);*/
-  background-image: linear-gradient(
+  /*background-image: linear-gradient(
         180deg,         
         transparent 75%,        
         #085c74 100%);
@@ -2603,7 +2700,7 @@ object-fit: fill;
   font-size: 6em;
   text-transform: uppercase;
   font-weight: bolder;
-}
+}*/
 .intro-actionsfutures {
  width: 90%; 
 }
@@ -2644,6 +2741,96 @@ width: 100%;
 #admin {
   min-height: 80vh;
 }
+}
+/*------------------------------------------------------1024----------------*/
+/*--------------------------------------------------------------------------*/
+@media screen  and (max-width : 1024px) {
+#logodiv img {
+  width: 250px;
+}
+#intro {
+  width: 90%;
+  margin-bottom: 25px;
+}
+.op-text p {  
+  width: 80%;
+}
+.recap-action { 
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.intro-action {
+ width: 90%;
+ flex-direction: row;
+  flex-wrap: wrap;
+}
+.intro-action img {
+  margin: auto;
+  width: 35%;
+  object-fit: cover;
+  z-index: 99;
+}
+.ink-action img {  
+  width: 100px;
+}
+.details-action {
+  display: flex;
+  flex-direction: column; 
+   width: 50%; 
+}
+.trash-action {
+  line-height: 25px;
+  margin: 0 15px;
+}
+.composition__photo--p1 {
+      left: -5%;   
+}
+.composition__photo--p2 {
+      left: 20%;
+    top: 20rem;
+}
+.composition__photo--p3 {      
+     left: -15%;
+     top: 40rem;
+      
+}
+.composition__photo--p4 {
+      left: 65%;
+   
+}
+.composition__photo--p5 {
+      left: 25%;
+      top: 55rem;
+}
+.composition__photo--p6 {      
+     left: 55%;
+      top: 70rem;
+}
+.containeradmin .hexagonadmin {
+  width: 240px;
+  height: 320px;
+}
+article {     
+min-height: 90vh;
+padding: 20px;
+flex-direction: row;
+  justify-content: space-evenly;
+}
+#divpresse {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
+}
+#intropresse {
+  width: 5%;
+}
+#sectiontv {
+ 
+  background-size: 150%;
+  min-height: 50vh;
 }
 /*------------------------------------------------------768----------------*/
 /*--------------------------------------------------------------------------*/
@@ -2687,22 +2874,37 @@ width: 100%;
     nav ul li ul li {
     width: 100%;   
   }
-#parallax {
+  #parallax {
+  display: none;
+}
+#mediaphone {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}
+#mediaphone img {
+   width: 100%;
+ 
+  object-fit: cover;
+}
+#parallaxportrait {
   position: relative;
   width: 100%;
-  min-height: 120vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-#parallax::before {
+
+#parallaxportrait::before {
   content: '';
   position: absolute;
   bottom: 0px;
   left: 0;
   width: 100%;
-  height: 20vh;
+  height: 50px;
   /*background: linear-gradient(to top, #085c74, transparent);*/
   background-image: linear-gradient(
         180deg,         
@@ -2710,65 +2912,16 @@ width: 100%;
         #085c74 100%);
   z-index: 10;
 }
-#parallax img {
+#parallaxportrait img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
- min-height: 20vh;
+  height: 100%;
   pointer-events: none;
   object-fit: cover;
 }
-#water {
-  display: none;
-}
-#watermedia {
-  display: flex;
-}
-#piles1 {
-  margin-left: -50px;
-  margin-top: 25px;
-}
-#piles2 {
-  margin-top: 25px;
-}
-#butterflies {
-    margin-top: -350px;
-}
-#text {
-  display: none;
-}
-#textmedia {
-  position: absolute;
- top: 17%;
-  left: 0%;
-  display: flex;
-  width: 100%;
-  z-index: -1;
-}
-#textmedia h2 { 
-  text-align: center;
-  color: white;
-  font-family: 'Pirata One', Helvetica, Arial, sans-serif;
-  margin: auto;
-  -webkit-text-stroke: 2px black;
-  letter-spacing: 0.05em;
-  line-height: 1.075em;
-  font-size: 7em;
-  text-transform: uppercase;
-  font-weight: bolder;
-}
-#bird1 {
-   margin-top: 100px;
-}
-#cloud2 {
-  margin-top: -50px;
-}
-#text {
-  margin-bottom: 250px;
-  -webkit-text-stroke: 2px black;  
-  font-size: 5em;
-}
+
 .countdown div {  
   width: 50px;
   height: 30px;
@@ -3136,7 +3289,8 @@ backdrop-filter: blur( 4px );
 /*//////////////////////PRESSE//////////////////////////*/
 article {
     flex-direction: column; 
-  justify-content: space-evenly;   
+  justify-content: space-evenly; 
+  min-height: 60vh;  
 }
 #intropresse {
   width: auto;
@@ -3182,7 +3336,7 @@ text-orientation: upright;*/
   justify-content: space-evenly;  
   width: 100%;
   min-height: 50vh;
-  background-size: 45%;
+  background-size: 150%;
 background-repeat: repeat;
 background-attachment: fixed;
 background-position: center top;
@@ -3277,6 +3431,15 @@ form {
 }
 
  
+
+/*------------------------------------------------------568----------------*/
+/*--------------------------------------------------------------------------*/
+@media (max-width: 568px) {
+  
+
+}
+/*------------------------------------------------------450---------------*/
+/*--------------------------------------------------------------------------*/
 @media screen and (max-width: 450px) {
   #blocsignup {
   

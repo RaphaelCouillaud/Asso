@@ -39,6 +39,45 @@ window.addEventListener('scroll', () => {
  piles1.style.left = value * -3 + 'px';
  piles2.style.left = value * 3 + 'px'; 
  });
+// PARALLAX PORTRAIT SCROLL HEADER //
+
+let textphone = document.getElementById('textphone');
+let bird1phone = document.getElementById('bird1phone');
+let bird2phone = document.getElementById('bird2phone');
+
+let cloudphone = document.getElementById('cloudphone');
+
+let sunphone = document.getElementById('sunphone');
+let backphone = document.getElementById('backphone');
+
+let plantsphone = document.getElementById('plantsphone');
+let turtlephone = document.getElementById('turtlephone');
+let fishphone = document.getElementById('fishphone');
+let piles1phone = document.getElementById('piles1phone');
+let piles2phone = document.getElementById('piles2phone');
+let waterphone = document.getElementById('waterphone');
+
+window.addEventListener('scroll', () => {
+ let valuephone = window.scrollY;
+ 
+ textphone.style.top = 20 + valuephone * -0.5 + '%';
+ bird1phone.style.top = valuephone * -1.5 + 'px';
+ bird1phone.style.left = valuephone * -2 + 'px';
+ bird2phone.style.top = valuephone * -1.5 + 'px';
+ bird2phone.style.left = valuephone * 5 + 'px';
+ 
+ cloudphone.style.left = valuephone * -2 + 'px';
+ 
+ sunphone.style.left = valuephone * -0.5 + 'px';
+ sunphone.style.top = valuephone * 0.25 + 'px';
+ 
+ backphone.style.top = valuephone * -0.15 + 'px';
+ plantsphone.style.top = valuephone * 0.025 + 'px';
+ fishphone.style.left = valuephone * 0.5 + 'px';
+ turtlephone.style.left = valuephone * -0.5 + 'px';
+ piles1phone.style.left = valuephone * -3 + 'px';
+ piles2phone.style.left = valuephone * 3 + 'px'; 
+ });
 
 //MENU BURGER ANIMATION //
 const menuAnim = document.querySelector('.menu-toggle');
