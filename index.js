@@ -31,7 +31,7 @@ window.addEventListener('scroll', () => {
  cloud2.style.left = value * 5 + 'px';
  sun.style.left = value * -0.5 + 'px';
  sun.style.top = value * 0.25 + 'px';
- actioncounter.style.marginTop = value * 0.25 + 'px';
+ actioncounter.style.marginTop = value * 0.03 + 'px';
  back.style.top = value * -0.15 + 'px';
  plants.style.top = value * 0.025 + 'px';
  fish.style.left = value * 0.55 + 'px';
@@ -66,9 +66,9 @@ window.addEventListener('scroll', () => {
  bird2phone.style.top = valuephone * -1.5 + 'px';
  bird2phone.style.left = valuephone * 5 + 'px';
  
- cloudphone.style.left = valuephone * -2 + 'px';
+ cloudphone.style.left = valuephone * -1 + 'px';
  
- sunphone.style.left = valuephone * -0.5 + 'px';
+ sunphone.style.left = valuephone * 0.5 + 'px';
  sunphone.style.top = valuephone * 0.25 + 'px';
  
  backphone.style.top = valuephone * -0.15 + 'px';
@@ -135,6 +135,11 @@ show1.onclick = function(){
 	show2.style.borderBottom = "none";
 	show3.style.borderBottom = "none";
 	show4.style.borderBottom = "none";
+	show1.style.opacity = "1";
+	show2.style.opacity = "0.7";
+	show3.style.opacity = "0.7";
+	show4.style.opacity = "0.7";
+
 }
 show2.onclick = function(){
 	opText1.style.display = "none";
@@ -145,6 +150,10 @@ show2.onclick = function(){
 	show2.style.borderBottom = "5px solid white";
 	show3.style.borderBottom = "none";
 	show4.style.borderBottom = "none";
+	show1.style.opacity = "0.7";
+	show2.style.opacity = "1";
+	show3.style.opacity = "0.7";
+	show4.style.opacity = "0.7";
 }
 show3.onclick = function(){
 	opText1.style.display = "none";
@@ -155,6 +164,10 @@ show3.onclick = function(){
 	show2.style.borderBottom = "none";
 	show3.style.borderBottom = "5px solid white";
 	show4.style.borderBottom = "none";
+	show1.style.opacity = "0.7";
+	show2.style.opacity = "0.7";
+	show3.style.opacity = "1";
+	show4.style.opacity = "0.7";
 }
 show4.onclick = function(){
 	opText1.style.display = "none";
@@ -165,10 +178,14 @@ show4.onclick = function(){
 	show2.style.borderBottom = "none";
 	show3.style.borderBottom = "none";
 	show4.style.borderBottom = "5px solid white";
+	show1.style.opacity = "0.7";
+	show2.style.opacity = "0.7";
+	show3.style.opacity = "0.7";
+	show4.style.opacity = "1";
 };
 // ACTUALITES //
 const allCross = document.querySelectorAll('.visible-pannel img');
-console.log(allCross);
+
 
 
 allCross.forEach(element => {
@@ -587,7 +604,7 @@ question1.onclick = function(){
 	answer7.style.display = "none";	
 	answer8.style.display = "none";		
 	question1.style.opacity = "1";
-	question1.style.transform = "scale(1.25)";
+	question1.style.transform = "scale(1.1)";
 	question2.style.opacity = "0.5";
 	question2.style.transform = "scale(1)";	
 	question3.style.opacity = "0.5";
@@ -615,7 +632,7 @@ question2.onclick = function(){
 	question1.style.opacity = "0.5";
 	question1.style.transform = "scale(1)";
 	question2.style.opacity = "1";
-	question2.style.transform = "scale(1.25)";	
+	question2.style.transform = "scale(1.1)";	
 	question3.style.opacity = "0.5";
 	question3.style.transform = "scale(1)";		
 	question4.style.opacity = "0.5";
@@ -643,7 +660,7 @@ question3.onclick = function(){
 	question2.style.opacity = "0.5";
 	question2.style.transform = "scale(1)";	
 	question3.style.opacity = "1";
-	question3.style.transform = "scale(1.25)";		
+	question3.style.transform = "scale(1.1)";		
 	question4.style.opacity = "0.5";
 	question4.style.transform = "scale(1)";		
 	question5.style.opacity = "0.5";
@@ -671,7 +688,7 @@ question4.onclick = function(){
 	question3.style.opacity = "0.5";
 	question3.style.transform = "scale(1)";		
 	question4.style.opacity = "1";
-	question4.style.transform = "scale(1.25)";		
+	question4.style.transform = "scale(1.1)";		
 	question5.style.opacity = "0.5";
 	question5.style.transform = "scale(1)";		
 	question6.style.opacity = "0.5";	
@@ -699,7 +716,7 @@ question5.onclick = function(){
 	question4.style.opacity = "0.5";
 	question4.style.transform = "scale(1)";		
 	question5.style.opacity = "1";
-	question5.style.transform = "scale(1.25)";		
+	question5.style.transform = "scale(1.1)";		
 	question6.style.opacity = "0.5";	
 	question6.style.transform = "scale(1)";	
 	question7.style.opacity = "0.5";
@@ -727,7 +744,7 @@ question6.onclick = function(){
 	question5.style.opacity = "0.5";
 	question5.style.transform = "scale(1)";		
 	question6.style.opacity = "1";	
-	question6.style.transform = "scale(1.25)";	
+	question6.style.transform = "scale(1.1)";	
 	question7.style.opacity = "0.5";
 	question7.style.transform = "scale(1)";
 	question8.style.opacity = "0.5";
@@ -755,7 +772,7 @@ question7.onclick = function(){
 	question6.style.opacity = "0.5";	
 	question6.style.transform = "scale(1)";	
 	question7.style.opacity = "1";
-	question7.style.transform = "scale(1.25)";
+	question7.style.transform = "scale(1.1)";
 	question8.style.opacity = "0.5";
 	question8.style.transform = "scale(1)";		
 }
@@ -783,7 +800,7 @@ question8.onclick = function(){
 	question7.style.opacity = "0.5";
 	question7.style.transform = "scale(1)";	
 	question8.style.opacity = "1";
-	question8.style.transform = "scale(1.25)";
+	question8.style.transform = "scale(1.1)";
 	
 }
 // COUNTER //
