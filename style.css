@@ -365,7 +365,7 @@ h1 {
 }
 #logodiv img {
 	width: 350px;
-	height: 100%;
+	height: 350px;
 	margin: auto;
 animation: rota 4s linear infinite;
   -moz-animation: rota 40s linear infinite;
@@ -457,17 +457,17 @@ animation: rota 4s linear infinite;
 
 #op-1-text {
   background-image: linear-gradient(180deg, 
-        rgba(8, 92, 116, 0.5) 0%, rgba(120, 228, 228, 0.5) 100%), url("https://scontent.fcdg1-1.fna.fbcdn.net/v/t1.6435-9/174222481_10159283647023838_9204910002374242470_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=b9115d&_nc_ohc=YovuOuBKSzgAX-wgY74&_nc_ht=scontent.fcdg1-1.fna&oh=4f687e1250a3f2b80c7448ff554f9a94&oe=60CD5E49");
-  background-position: center;
+        rgba(8, 92, 116, 0.5) 0%, rgba(120, 228, 228, 0.5) 100%), url("img/op1.jpg");
+  background-position: 25% 30%;
 }
 #op-2-text {
   background-image: linear-gradient(180deg, 
-        rgba(8, 92, 116, 0.5) 0%, rgba(120, 228, 228, 0.5) 100%), url("https://scontent.fcdg1-1.fna.fbcdn.net/v/t1.6435-9/160369081_10159005654252970_5528504449003619092_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=b9115d&_nc_ohc=oi1aYOhxsCUAX8ilCw9&_nc_ht=scontent.fcdg1-1.fna&oh=d9dd5e0b6cc28a00756dd35b6a73f70b&oe=60D11643");
+        rgba(8, 92, 116, 0.5) 0%, rgba(120, 228, 228, 0.5) 100%), url("img/op2.jpg");
   background-position: 25% 30%;
 }
 #op-3-text {
   background-image: linear-gradient(180deg, 
-        rgba(8, 92, 116, 0.5) 0%, rgba(120, 228, 228, 0.5) 100%), url("https://scontent.fcdg2-1.fna.fbcdn.net/v/t1.6435-9/166583532_5272707842802735_8765654877895691583_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=b9115d&_nc_ohc=k-CfCWKCMd4AX84g9dk&_nc_ht=scontent.fcdg2-1.fna&oh=14a73d709672b16c252acbb35754cf1d&oe=60D38D5E");
+        rgba(8, 92, 116, 0.5) 0%, rgba(120, 228, 228, 0.5) 100%), url("img/op3.jpg");
   background-position: 25% 25%;
 }
 #op-4-text {
@@ -1860,7 +1860,7 @@ backdrop-filter: blur( 4px );
   color: black;
 }
 #intromairies {
-  width: auto;
+  width: 25%;
   margin: auto;
   padding: 0;
   text-align: center;
@@ -1876,7 +1876,7 @@ text-orientation: upright;*/
   width: 100%;
 }
 #divmairies {
-  width: 75%;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2441,6 +2441,9 @@ form h2 {
   font-style: italic;
   font-size: 1.85em;
 }
+form h2 span {
+  font-style: normal;
+}
 form h3 {
   font-family: 'Pirata One', Helvetica, Arial, sans-serif;
   font-size: 3em;
@@ -2787,16 +2790,19 @@ width: 100%;
 @media screen  and (max-width : 1024px) {
 #logodiv img {
   width: 250px;
+  height: 250px;
 }
 #intro {
   width: 90%;
   margin-bottom: 25px;
 }
+#logocitation {  
+ margin-bottom: 50px;
+}
 .container-actus {
     width: 80%;
     max-width: 768px;
-    min-width: 700px;
-   
+    min-width: 700px;   
 }
 .op-text p {  
   width: 80%;
@@ -2823,10 +2829,6 @@ width: 100%;
   display: flex;
   flex-direction: column; 
    width: 50%; 
-}
-.trash-action {
-  line-height: 25px;
-  margin: 0 15px;
 }
 .composition__photo--p1 {
       left: -5%;   
@@ -2881,6 +2883,15 @@ flex-direction: column;
   width: 100%;
   margin: 0 auto;
   padding-top: 50px;
+}
+#mairies {  
+  flex-direction: column;  
+}
+#intromairies {
+  width: 100%;  
+}
+#divmairies {
+  width: 90%;
 }
 #sectiontv {
  
@@ -3026,6 +3037,7 @@ main {
 }
 #logodiv img {
   width: 200px;
+  height: 200px;
 }
 #logodiv, #citation {
   width: 40%;
@@ -3124,11 +3136,13 @@ background-size: 50%;
 }
 .intro-action img {
   margin: auto;
-  width: 30%;
+  width: 50%;
   object-fit: cover;
   z-index: 99;
 }
-
+.trash-action {
+  line-height: normal;
+}
 .ink-action img {  
   width: 100px;
 }
@@ -3137,10 +3151,7 @@ background-size: 50%;
   flex-direction: column; 
    width: 65%; 
 }
-.trash-action {
-  line-height: 25px;
-  margin: 0 15px;
-}
+
 .imgaction {
   width: 100%;
 }
@@ -3348,16 +3359,7 @@ backdrop-filter: blur( 4px );
  max-width: 50%;  
   object-fit: cover;
 }
-/*///////////mairies///////////////*/
-#mairies {  
-  flex-direction: column;  
-}
-#intromairies {
-  width: 100%;  
-}
-#divmairies {
-  width: 90%;
-}
+
 .linksmairies {
   width: 20%;
    height: 200px;
@@ -3770,6 +3772,19 @@ label, input, textarea {
    width: 40%;   
   font-size: 2.5em;
 }
+.ineer1{    
+    animation-duration: 5s;    
+   }
+    
+  
+  .ineer2{
+    animation-duration: 8s;
+   }
+  
+  .ineer3{    
+    animation-duration: 6s;   
+   }
+  
 }
 /*------------------------------------------------------420---------------*/
 /*--------------------------------------------------------------------------*/
@@ -3979,7 +3994,9 @@ figure {
    body {
 font-size: 0.9em;
 }
-
+.op-text h3, .op-text p {
+    padding-top: 50px;
+  }
 .composition__photo--p3 {      
          top: 8rem;   
 }
