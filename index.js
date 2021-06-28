@@ -916,7 +916,7 @@ window.addEventListener('scroll',() => {
   const sectionPos1 = skillsSection1.getBoundingClientRect().top;
   const screenPos = window.innerHeight / 1.5;
 
-  if(sectionPos < screenPos & sectionPos1 < screenPos ){
+  if(sectionPos < screenPos || sectionPos1 < screenPos ){
       showProgress();
   } else{
      hideProgress();
