@@ -2878,6 +2878,17 @@ flex-direction: column;
   width: 160px;  
   padding: 15px;
 }
+.articlepresse a {
+ position: absolute;
+ color: #085c74;
+ top: 50px;
+ left: 50px;
+ display: none;
+ transition: all 0.4s;
+}
+.articlepresse i {
+ font-size: 80px;
+}
 #intropresse {
   width: 80%; 
 }
@@ -3415,10 +3426,13 @@ text-orientation: upright;*/
 .articlepresse a {
  position: absolute;
  color: #085c74;
- top: 50px;
- left: 50px;
+ top: 42px;
+ left: 42px;
  display: none;
  transition: all 0.4s;
+}
+.articlepresse i {
+ font-size: 60px;
 }
 /*///////////////////VIDEO///////////////////////////////////////////*/
 #sectiontv {
@@ -3786,7 +3800,9 @@ label, input, textarea {
   .ineer3{    
     animation-duration: 6s;   
    }
-  
+  .marqueefooterwhale > :first-child {  
+  animation: defil 40s infinite linear;
+}
 }
 /*------------------------------------------------------420---------------*/
 /*--------------------------------------------------------------------------*/
