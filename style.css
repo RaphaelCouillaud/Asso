@@ -2008,7 +2008,7 @@ text-orientation: upright;*/
    background-image: linear-gradient(0deg,
          rgba(8, 92, 116, 0.25), 
         rgba(0, 0, 0, 0.75)
-      ), url("img/tvscreen.png"), url("img/vidgif1.gif"); 
+      ), url("img/tvscreen.png"), url("img/trash.gif"); 
   background-size: cover;
 background-repeat: repeat;
 background-attachment: fixed;
@@ -2292,14 +2292,10 @@ color: white;
   padding-top: 50px;  
   text-align: center;
   width: 100%;
-/*    background-image: linear-gradient(
-             rgba(8, 92, 116, 0.85), 
-        rgba(185, 217, 235, 1)
-      ), url("img/background.png"); 
-background-size: cover;
-background-attachment: fixed;
-background-repeat: repeat;
-background-position: top center;*/
+background-image: linear-gradient(
+        rgba(8, 92, 116, 1), 
+        rgba(185, 217, 235, 0)
+      ); 
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -2307,6 +2303,7 @@ background-position: top center;*/
 }
 #socialnetworks {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   min-height: 100vh;
@@ -2362,6 +2359,9 @@ background-position: top center;*/
 }
 #socialnetworks li:hover:nth-child(5) a{
   background: #ff0000;
+}
+#socialnetworks li p {
+  font-size: 1.5em;
 }
 /*/////////////////////FORMULAIRE////////////////////*/
 /* Form */
@@ -2600,7 +2600,31 @@ font-weight: lighter;
     bottom: 125px;   /* position finale à gauche */
   }
 }
-
+#mentionslegales {
+  width: 100%;
+  margin: auto 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient(
+        rgba(8, 92, 116, 1), 
+        rgba(185, 217, 235, 0)
+      ); 
+} 
+#mentionslegales {
+   margin: 0 auto;
+  text-align: center;
+   width: 100%;
+  font-size: 1.25em;
+    font-family: 'Pirata One', Helvetica, Arial, sans-serif;  
+}
+#mentionslegales p {
+   margin: 0 auto;
+  text-align: center;
+   width: 100%;
+  font-size: 1em;
+    font-family: 'Rambla', Helvetica, Arial, sans-serif; 
+}
 /*-------------------------------MEDIA QUERIES-------------------------*/
 /*////////////////////////////////////*/
 /*----------------------------------------------------------------------*/
@@ -3802,6 +3826,10 @@ label, input, textarea {
    }
   .marqueefooterwhale > :first-child {  
   animation: defil 40s infinite linear;
+}
+#socialnetworks li p {
+  margin-top: 15px;
+  font-size: 1.5em;
 }
 }
 /*------------------------------------------------------420---------------*/
