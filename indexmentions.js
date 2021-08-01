@@ -1,1 +1,74 @@
-let header=document.getElementById("header"),text=document.getElementById("text"),bird1=document.getElementById("bird1"),bird2=document.getElementById("bird2"),butterflies=document.getElementById("butterflies"),cloud1=document.getElementById("cloud1"),cloud2=document.getElementById("cloud2"),sun=document.getElementById("sun"),back=document.getElementById("back"),actioncounter=document.getElementById("actioncounter"),plants=document.getElementById("plants"),turtle=document.getElementById("turtle"),fish=document.getElementById("fish"),piles1=document.getElementById("piles1"),piles2=document.getElementById("piles2"),water=document.getElementById("water"),watermedia=document.getElementById("watermedia");window.addEventListener("scroll",()=>{let e=window.scrollY;header.style.top=-.5*e+"px",text.style.top=50+-.5*e+"%",bird1.style.top=-1.5*e+"px",bird1.style.left=-2*e+"px",bird2.style.top=-1.5*e+"px",bird2.style.left=5*e+"px",butterflies.style.top=-1*e+"px",butterflies.style.left=1*e+"px",cloud1.style.left=-2*e+"px",cloud2.style.left=5*e+"px",sun.style.left=-.5*e+"px",sun.style.top=.25*e+"px",back.style.top=-.15*e+"px",plants.style.top=.025*e+"px",fish.style.left=.55*e+"px",turtle.style.left=-.5*e+"px",piles1.style.left=-3*e+"px",piles2.style.left=3*e+"px"});let textphone=document.getElementById("textphone"),bird1phone=document.getElementById("bird1phone"),bird2phone=document.getElementById("bird2phone"),cloudphone=document.getElementById("cloudphone"),sunphone=document.getElementById("sunphone"),backphone=document.getElementById("backphone"),plantsphone=document.getElementById("plantsphone"),turtlephone=document.getElementById("turtlephone"),fishphone=document.getElementById("fishphone"),piles1phone=document.getElementById("piles1phone"),piles2phone=document.getElementById("piles2phone"),waterphone=document.getElementById("waterphone");window.addEventListener("scroll",()=>{let e=window.scrollY;textphone.style.top=20+-.5*e+"%",bird1phone.style.top=-1.5*e+"px",bird1phone.style.left=-2*e+"px",bird2phone.style.top=-1.5*e+"px",bird2phone.style.left=5*e+"px",cloudphone.style.left=-1*e+"px",sunphone.style.left=.5*e+"px",sunphone.style.top=.25*e+"px",backphone.style.top=-.15*e+"px",plantsphone.style.top=.025*e+"px",fishphone.style.left=.5*e+"px",turtlephone.style.left=-.5*e+"px",piles1phone.style.left=-3*e+"px",piles2phone.style.left=3*e+"px"});
+// PARALLAX SCROLL HEADER //
+
+let text = document.getElementById('text');
+
+let butterflies = document.getElementById('butterflies');
+let butterflies1 = document.getElementById('butterflies1');
+
+let back = document.getElementById('back');
+let actioncounter = document.getElementById('actioncounter');
+
+let plants = document.getElementById('plants');
+let turtle = document.getElementById('turtle');
+let fish = document.getElementById('fish');
+let piles1 = document.getElementById('piles1');
+let piles2 = document.getElementById('piles2');
+
+
+window.addEventListener('scroll', () => {
+ let value = window.scrollY;
+ 
+ text.style.top = 50 + value * -0.5 + '%';
+ butterflies.style.top = value * -1 + 'px';
+ butterflies.style.left = value * 1 + 'px';
+ butterflies1.style.top = value * -1.02 + 'px';
+ butterflies1.style.left = value * 1.025 + 'px';
+ actioncounter.style.marginTop = value * -0.025 + 'px';
+ back.style.top = value * -0.15 + 'px';
+ plants.style.top = value * 0.025 + 'px';
+ fish.style.left = value * 0.55 + 'px';
+ turtle.style.left = value * -0.5 + 'px';
+ piles1.style.left = value * -3 + 'px';
+ piles2.style.left = value * 3 + 'px'; 
+ });
+// PARALLAX PORTRAIT SCROLL HEADER //
+
+let textphone = document.getElementById('textphone');
+let bird1phone = document.getElementById('bird1phone');
+let bird2phone = document.getElementById('bird2phone');
+
+let cloudphone = document.getElementById('cloudphone');
+
+let sunphone = document.getElementById('sunphone');
+let backphone = document.getElementById('backphone');
+
+let plantsphone = document.getElementById('plantsphone');
+let turtlephone = document.getElementById('turtlephone');
+let fishphone = document.getElementById('fishphone');
+let piles1phone = document.getElementById('piles1phone');
+let piles2phone = document.getElementById('piles2phone');
+let waterphone = document.getElementById('waterphone');
+
+window.addEventListener('scroll', () => {
+ let valuephone = window.scrollY;
+ 
+ textphone.style.top = 20 + valuephone * -0.5 + '%';
+ bird1phone.style.top = valuephone * -1.5 + 'px';
+ bird1phone.style.left = valuephone * -2 + 'px';
+ bird2phone.style.top = valuephone * -1.5 + 'px';
+ bird2phone.style.left = valuephone * 5 + 'px';
+ 
+ cloudphone.style.left = valuephone * -1 + 'px';
+ 
+ sunphone.style.left = valuephone * 0.5 + 'px';
+ sunphone.style.top = valuephone * 0.25 + 'px';
+ 
+ backphone.style.top = valuephone * -0.15 + 'px';
+ plantsphone.style.top = valuephone * 0.025 + 'px';
+ fishphone.style.left = valuephone * 0.5 + 'px';
+ turtlephone.style.left = valuephone * -0.5 + 'px';
+ piles1phone.style.left = valuephone * -3 + 'px';
+ piles2phone.style.left = valuephone * 3 + 'px'; 
+ });
+
+

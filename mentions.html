@@ -3,19 +3,21 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Les Insurgés des déchets : Une association de bénévoles du bassin de Marennes unis pour que le monde de demain soit plus propre que le monde d'aujourd'hui !">
+        <meta name="description" content="Les Insurgés des déchets : Une association écocitoyenne du bassin de Marennes 17 unie pour ramasser, trier et revaloriser les déchets">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+         <meta name="robots" content="noindex">
         <link rel="icon" type="image/png" href="favicon.png">
         <link rel="stylesheet" href="style.css">
-        
+        <link rel="stylesheet" href="stylemedia.css">
          <!--cdn swiper-->
        
-       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+       <!--<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />-->
         <!--kit font awesome-->
         <script src="https://kit.fontawesome.com/82f45c04c7.js" crossorigin="anonymous"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+       
 
 
 
@@ -37,36 +39,77 @@
     		<div id="logo">
         		<img src="img/logoblack.png" alt="Logo Les Insurgés des déchets" >
         	</div>
-        	<nav>   
-	        	<ul>
-	        		<li><a href="index.html" title="Accueil"><i class="fas fa-home"></i></a></li>
-	        		
-	        	</ul>
-        	</nav>        	
+        	 <nav>   
+                <ul>
+                    <li><a href="index.html#header" title="Accueil"><i class="fas fa-home"></i></a></li>
+                   <!--<li><a href="index.html#demarche" title="Démarche">Démarche</a></li>
+                    <li><a href="index.html#rappels" title="Rappels durée de vie des déchets"><i class="fas fa-info-circle"></i></a></li>-->
+                    <li><a href="actus.html#actus" title="Actualités">Actualités</a></li>                   
+                    <li class="sub-menu"><a href="#" title="Ramasser les déchets">Ramasser</a>                            
+                        <ul>
+                            <li><a href="actions.html#actionsfutures" title="Actions futures">Actions futures</a></li>
+                            <li><a href="actions.html#actionspassees" title="Actions passées">Actions passées</a></li>
+                            <li><a href="actions.html#actionsindividuelles" title="Agir au quotidien">Agir au quotidien</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu"><a href="#" title="Sensibiliser">Sensibiliser</a>
+                        <ul>
+                            <li><a href="sensibilisation.html#sensibilisation1" title="Actions futures">Stands</a></li>
+                            <li><a href="sensibilisation.html#sensibilisation2" title="Actions passées">Événements</a></li>
+                            <li><a href="sensibilisation.html#sensibilisation3" title="Agir au quotidien">Initiatives</a></li>
+                             <li><a href="sensibilisation.html#sensibilisation4" title="Agir au quotidien">Ateliers</a></li>
+                        </ul>
+                    </li>
+                     <li class="sub-menu"><a href="#" title="Informations"><i class="fas fa-info-circle"></i></a>                  
+                        <ul>
+                             <li><a href="faq.html#faqsection" title="Foire Aux Questions">F.A.Q.</a></li>
+                             <li><a href="faq.html#rappels" title="Rappels">Rappels</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu"><a href="#" title="Portraits association">Portraits</a>                                
+                        <ul>
+                           <li><a href="portraits.html#introadmin" title="Le bureau">Bureau</a></li>
+                            <li><a href="portraits.html#introtemoignages" title="Membres">Membres</a></li>
+                        </ul>
+                    </li>   
+                    <li class="sub-menu"><a href="#" title="Partenaires">Partenaires</a>                  
+                        <ul>
+                            <li><a href="soutiens.html#associatifs" title="Associations">Associatifs</a></li>
+                           <li><a href="soutiens.html#prives" title="Privés">Privés</a></li>
+                               <li><a href="soutiens.html#mairies" title="Pouvoirs publics">Pouvoirs publics</a></li>
+                            <li><a href="soutiens.html#sectiontv" title="Médias">Médias</a></li>                           
+                        </ul>
+                    </li>
+                    <li class="sub-menu"><a href="#" title="Aidez-Nous">Nous soutenir</a>                  
+                        <ul>
+                             <li><a href="adhesion.html#adhesion" title="Adhérer à l'association">Adhérer</a></li>
+                              <li><a href="adhesion.html#don" title="Faire un don">Faire un don</a></li>
+                        </ul>
+                    </li>
+                     <li><a href="contact.html#blocsignup" title="Contact"><i class="fas fa-paper-plane"></i></a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <div class="menu-burger"></div>   
+            </div>    	
         </header>
 
 <main>
         <div id="parallax">
-        	
-        	<h2 id="text">Les Insurgés<br>des déchets</h2>        	
-        	
-        	<img src="img/sun.png" alt="Illustration soleil" id="sun">
-        	<img src="img/cloud1.png" alt="Illustration nuage" id="cloud1">
-        	<img src="img/cloud2.png" alt="Illustration nuage" id="cloud2">
-        	<img src="img/bird1.png" alt="Illustration oiseau" id="bird1">
-        	<img src="img/bird2.png" alt="Illustration oiseau" id="bird2">        	
-        	<img src="img/back.png" alt="Illustration groupe Les Insurgés des déchets" id="back"> 
-        	
-
-        	<img src="img/plants.png" alt="Illustration herbe" id="plants">
-        	<img src="img/butterflies.png" alt="Illustration papillons" id="butterflies">
-        	<img src="img/water.png" alt="Illustration marais" id="water">
-        	<!--<img src="img/watermedia.png" alt="" id="watermedia">-->
-        	<img src="img/turtle.png" alt="Illustration tortues" id="turtle">
-        	<img src="img/fish.png" alt="Illustration poissons" id="fish">
-        	<img src="img/piles1.png" alt="Illustration déchets aquatiques" id="piles1">
-        	<img src="img/piles2.png" alt="Illustration déchets aquatiques" id="piles2">   
-        	
+            
+            <h2 id="text">Les Insurgés<br>des déchets</h2>          
+            
+            <img src="img/parallax/sun.png" alt="Illustration soleil" id="sun">                 
+            <img src="img/parallax/back.png" alt="Illustration groupe Les Insurgés des déchets" id="back">  
+            <img src="img/parallax/plants.png" alt="Illustration herbe" id="plants">
+            <img src="img/parallax/butterflies.png" alt="Illustration papillons" id="butterflies">
+            <img src="img/parallax/butterflies1.png" alt="Illustration papillons" id="butterflies1">
+                  
+            <img src="img/parallax/turtle.png" alt="Illustration tortues" id="turtle">
+            <img src="img/parallax/fish.png" alt="Illustration poissons" id="fish">
+            <img src="img/parallax/parallax1.png" alt="Illustration déchets aquatiques" id="piles1">
+            <img src="img/parallax/parallax2.png" alt="Illustration déchets aquatiques" id="piles2">   
+            
         </div>
 
         <div id="parallaxportrait">
@@ -152,25 +195,10 @@ San Francisco, CA 94107<br>Site web : https://www.netlify.com</p>
               
             
         </footer> 
-    
-
-
-         
-		
-
 
        
         <script src="indexmentions.js"></script>
-        <!-- Lettering js
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
-       <script>
-       	$(function() {
-       		$('h1').lettering();
-       	});
-       </script>-->
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
-       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+       
        <script>
             $(document).ready(function(){
             	$('.menu-toggle').click(function(){
