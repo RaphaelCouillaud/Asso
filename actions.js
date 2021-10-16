@@ -261,6 +261,15 @@ let textscript14 = "Nom de code opération : Promenons-nous dans les bois";
         key * 350
       );
     });
+let textscript15 = "Nom de code opération : Lavage de plage";
+    let array15 = Array.from(textscript15);
+
+    Object.keys(array15).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription15").innerHTML += array15[key]),
+        key * 345
+      );
+    });
 // HIDE SHOW ACTIONS //
 const action1 = document.getElementById('ac-1'); //options
 const action2 = document.getElementById('ac-2');
