@@ -270,7 +270,7 @@ let textscript15 = "Nom de code opération : Lavage de plage";
         key * 345
       );
     });
-let textscript16 = "Nom de code opération : Lavage de plage";
+let textscript16 = "Nom de code opération : La légende des déchets";
     let array16 = Array.from(textscript16);
 
     Object.keys(array16).map((key) => {
