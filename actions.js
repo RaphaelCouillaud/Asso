@@ -85,7 +85,7 @@ menuAnim.addEventListener('click', () => {
 });
 
 //COUNTDOWN//////////////////////////////////////////////////////////
-let countDate = new Date('October 18, 2021 10:00:00').getTime();
+let countDate = new Date('November 3, 2021 09:00:00').getTime();
 function newYear(){
 	let currentTime = new Date().getTime();
 	let gapTime = countDate - currentTime;
@@ -270,6 +270,15 @@ let textscript15 = "Nom de code opération : Lavage de plage";
         key * 345
       );
     });
+let textscript16 = "Nom de code opération : Lavage de plage";
+    let array16 = Array.from(textscript16);
+
+    Object.keys(array16).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription16").innerHTML += array16[key]),
+        key * 345
+      );
+    });
 // HIDE SHOW ACTIONS //
 const action1 = document.getElementById('ac-1'); //options
 const action2 = document.getElementById('ac-2');
@@ -286,6 +295,7 @@ const action12 = document.getElementById('ac-12');
 const action13 = document.getElementById('ac-13');
 const action14 = document.getElementById('ac-14');
 const action15 = document.getElementById('ac-15');
+const action16 = document.getElementById('ac-16');
 const showAction1 = document.getElementById('ac-1-text');//choix display
 const showAction2 = document.getElementById('ac-2-text');
 const showAction3 = document.getElementById('ac-3-text');
@@ -301,6 +311,7 @@ const showAction12 = document.getElementById('ac-12-text');
 const showAction13 = document.getElementById('ac-13-text');
 const showAction14 = document.getElementById('ac-14-text');
 const showAction15 = document.getElementById('ac-15-text');
+const showAction16 = document.getElementById('ac-16-text');
 
 action1.onclick = function(){
 	showAction1.style.display = "flex";
@@ -318,6 +329,7 @@ action1.onclick = function(){
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";
 	showAction15.style.display = "none";
+	showAction16.style.display = "none";
 	action1.style.opacity = "1";
 	action1.style.filter = "grayscale(0)";
 	action2.style.opacity = "0.5";
@@ -348,6 +360,8 @@ action1.onclick = function(){
 	action14.style.filter = "grayscale(1)";
 	action15.style.opacity = "0.5";
 	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
 }
 action2.onclick = function(){
 	showAction1.style.display = "none";
@@ -365,6 +379,7 @@ action2.onclick = function(){
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";
 	showAction15.style.display = "none";
+	showAction16.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "1";
@@ -395,6 +410,8 @@ action2.onclick = function(){
 	action14.style.filter = "grayscale(1)";
 	action15.style.opacity = "0.5";
 	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
 }
 action3.onclick = function(){
 	showAction1.style.display = "none";
@@ -412,6 +429,7 @@ action3.onclick = function(){
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";	
 	showAction15.style.display = "none";
+	showAction16.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -442,6 +460,8 @@ action3.onclick = function(){
 	action14.style.filter = "grayscale(1)";
 	action15.style.opacity = "0.5";
 	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
 }
 action4.onclick = function(){
 	showAction1.style.display = "none";
@@ -458,7 +478,8 @@ action4.onclick = function(){
 	showAction12.style.display = "none";
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";
-	showAction15.style.display = "none";	
+	showAction15.style.display = "none";
+	showAction16.style.display = "none";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -489,6 +510,8 @@ action4.onclick = function(){
 	action14.style.filter = "grayscale(1)";
 	action15.style.opacity = "0.5";
 	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
 }
 action5.onclick = function(){
 	showAction1.style.display = "none";
@@ -506,6 +529,7 @@ action5.onclick = function(){
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";	
 	showAction15.style.display = "none";
+	showAction16.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -536,6 +560,8 @@ action5.onclick = function(){
 	action14.style.filter = "grayscale(1)";
 	action15.style.opacity = "0.5";
 	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
 }
 action6.onclick = function(){
 	showAction1.style.display = "none";
@@ -552,7 +578,8 @@ action6.onclick = function(){
 	showAction12.style.display = "none";
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";
-	showAction15.style.display = "none";	
+	showAction15.style.display = "none";
+	showAction16.style.display = "none";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -583,6 +610,8 @@ action6.onclick = function(){
 	action14.style.filter = "grayscale(1)";
 	action15.style.opacity = "0.5";
 	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
 }
 action7.onclick = function(){
 	showAction1.style.display = "none";
@@ -599,7 +628,8 @@ action7.onclick = function(){
 	showAction12.style.display = "none";
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";
-	showAction15.style.display = "none";	
+	showAction15.style.display = "none";
+	showAction16.style.display = "none";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -630,6 +660,8 @@ action7.onclick = function(){
 	action14.style.filter = "grayscale(1)";
 	action15.style.opacity = "0.5";
 	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
 }
 action8.onclick = function(){
 	showAction1.style.display = "none";
@@ -646,7 +678,8 @@ action8.onclick = function(){
 	showAction12.style.display = "none";
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";
-	showAction15.style.display = "none";	
+	showAction15.style.display = "none";
+	showAction16.style.display = "none";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -677,6 +710,8 @@ action8.onclick = function(){
 	action14.style.filter = "grayscale(1)";
 	action15.style.opacity = "0.5";
 	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
 }
 action9.onclick = function(){
 	showAction1.style.display = "none";
@@ -694,6 +729,7 @@ action9.onclick = function(){
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";	
 	showAction15.style.display = "none";
+	showAction16.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -724,6 +760,8 @@ action9.onclick = function(){
 	action14.style.filter = "grayscale(1)";
 	action15.style.opacity = "0.5";
 	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
 };
 action10.onclick = function(){
 	showAction1.style.display = "none";
@@ -741,6 +779,7 @@ action10.onclick = function(){
 	showAction13.style.display = "none";	
 	showAction14.style.display = "none";
 	showAction15.style.display = "none";
+	showAction16.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -771,6 +810,8 @@ action10.onclick = function(){
 	action14.style.filter = "grayscale(1)";
 	action15.style.opacity = "0.5";
 	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
 };
 action11.onclick = function(){
 	showAction1.style.display = "none";
@@ -787,7 +828,8 @@ action11.onclick = function(){
 	showAction12.style.display = "none";
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";
-	showAction15.style.display = "none";	
+	showAction15.style.display = "none";
+	showAction16.style.display = "none";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -818,6 +860,8 @@ action11.onclick = function(){
 	action14.style.filter = "grayscale(1)";
 	action15.style.opacity = "0.5";
 	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
 };
 action12.onclick = function(){
 	showAction1.style.display = "none";
@@ -835,6 +879,7 @@ action12.onclick = function(){
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";	
 	showAction15.style.display = "none";
+	showAction16.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -865,6 +910,8 @@ action12.onclick = function(){
 	action14.style.filter = "grayscale(1)";
 	action15.style.opacity = "0.5";
 	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
 };
 action13.onclick = function(){
 	showAction1.style.display = "none";
@@ -882,6 +929,7 @@ action13.onclick = function(){
 	showAction13.style.display = "flex";
 	showAction14.style.display = "none";	
 	showAction15.style.display = "none";
+	showAction16.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -912,6 +960,8 @@ action13.onclick = function(){
 	action14.style.filter = "grayscale(1)";
 	action15.style.opacity = "0.5";
 	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
 };
 action14.onclick = function(){
 	showAction1.style.display = "none";
@@ -928,7 +978,8 @@ action14.onclick = function(){
 	showAction12.style.display = "none";
 	showAction13.style.display = "none";
 	showAction14.style.display = "flex";
-	showAction15.style.display = "none";	
+	showAction15.style.display = "none";
+	showAction16.style.display = "none";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -959,6 +1010,8 @@ action14.onclick = function(){
 	action14.style.filter = "grayscale(0)";
 	action15.style.opacity = "0.5";
 	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
 
 };
 action15.onclick = function(){
@@ -976,7 +1029,8 @@ action15.onclick = function(){
 	showAction12.style.display = "none";
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";
-	showAction15.style.display = "flex";	
+	showAction15.style.display = "flex";
+	showAction16.style.display = "none";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -1007,9 +1061,60 @@ action15.onclick = function(){
 	action14.style.filter = "grayscale(1)";
 	action15.style.opacity = "1";
 	action15.style.filter = "grayscale(0)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
+};
+action16.onclick = function(){
+	showAction1.style.display = "none";
+	showAction2.style.display = "none";
+	showAction3.style.display = "none";	
+	showAction4.style.display = "none";
+	showAction5.style.display = "none";
+	showAction6.style.display = "none";
+	showAction7.style.display = "none";
+	showAction8.style.display = "none";	
+	showAction9.style.display = "none";	
+	showAction10.style.display = "none";
+	showAction11.style.display = "none";
+	showAction12.style.display = "none";
+	showAction13.style.display = "none";
+	showAction14.style.display = "none";
+	showAction15.style.display = "none";
+	showAction16.style.display = "flex";	
+	action1.style.opacity = "0.5";
+	action1.style.filter = "grayscale(1)";
+	action2.style.opacity = "0.5";
+	action2.style.filter = "grayscale(1)";
+	action3.style.opacity = "0.5";
+	action3.style.filter = "grayscale(1)";	
+	action4.style.opacity = "0.5";
+	action4.style.filter = "grayscale(1)";
+	action5.style.opacity = "0.5";
+	action5.style.filter = "grayscale(1)";
+	action6.style.opacity = "0.5";
+	action6.style.filter = "grayscale(1)";
+	action7.style.opacity = "0.5";
+	action7.style.filter = "grayscale(1)";
+	action8.style.opacity = "0.5";
+	action8.style.filter = "grayscale(1)";	
+	action9.style.opacity = "0.5";
+	action9.style.filter = "grayscale(1)";
+	action10.style.opacity = "0.5";
+	action10.style.filter = "grayscale(1)";
+	action11.style.opacity = "0.5";
+	action11.style.filter = "grayscale(1)";
+	action12.style.opacity = "0.5";
+	action12.style.filter = "grayscale(1)";
+	action13.style.opacity = "0.5";
+	action13.style.filter = "grayscale(1)";
+	action14.style.opacity = "0.5";
+	action14.style.filter = "grayscale(1)";
+	action15.style.opacity = "0.5";
+	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "1";
+	action16.style.filter = "grayscale(0";
 
 };
-
 
 
 ////////////////////////////////////////////////////////////////////////////
