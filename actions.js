@@ -252,7 +252,7 @@ let textscript13 = "Nom de code opération : Tortues Géniales II";
         key * 350
       );
     });
-let textscript14 = "Nom de code opération : Promenons-nous dans les bois";
+let textscript14 = "Nom de code opération : Promenons-nous dans les bois 1";
     let array14 = Array.from(textscript14);
 
     Object.keys(array14).map((key) => {
@@ -279,6 +279,15 @@ let textscript16 = "Nom de code opération : La légende des déchets";
         key * 345
       );
     });
+let textscript17 = "Nom de code opération : Promenons-nous dans les bois 2";
+    let array17 = Array.from(textscript17);
+
+    Object.keys(array17).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription17").innerHTML += array17[key]),
+        key * 345
+      );
+    });
 // HIDE SHOW ACTIONS //
 const action1 = document.getElementById('ac-1'); //options
 const action2 = document.getElementById('ac-2');
@@ -296,6 +305,7 @@ const action13 = document.getElementById('ac-13');
 const action14 = document.getElementById('ac-14');
 const action15 = document.getElementById('ac-15');
 const action16 = document.getElementById('ac-16');
+const action17 = document.getElementById('ac-17');
 const showAction1 = document.getElementById('ac-1-text');//choix display
 const showAction2 = document.getElementById('ac-2-text');
 const showAction3 = document.getElementById('ac-3-text');
@@ -312,6 +322,7 @@ const showAction13 = document.getElementById('ac-13-text');
 const showAction14 = document.getElementById('ac-14-text');
 const showAction15 = document.getElementById('ac-15-text');
 const showAction16 = document.getElementById('ac-16-text');
+const showAction17 = document.getElementById('ac-17-text');
 
 action1.onclick = function(){
 	showAction1.style.display = "flex";
@@ -330,6 +341,7 @@ action1.onclick = function(){
 	showAction14.style.display = "none";
 	showAction15.style.display = "none";
 	showAction16.style.display = "none";
+	showAction17.style.display = "none";
 	action1.style.opacity = "1";
 	action1.style.filter = "grayscale(0)";
 	action2.style.opacity = "0.5";
@@ -362,6 +374,8 @@ action1.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 }
 action2.onclick = function(){
 	showAction1.style.display = "none";
@@ -380,6 +394,7 @@ action2.onclick = function(){
 	showAction14.style.display = "none";
 	showAction15.style.display = "none";
 	showAction16.style.display = "none";
+	showAction17.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "1";
@@ -412,6 +427,8 @@ action2.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 }
 action3.onclick = function(){
 	showAction1.style.display = "none";
@@ -430,6 +447,7 @@ action3.onclick = function(){
 	showAction14.style.display = "none";	
 	showAction15.style.display = "none";
 	showAction16.style.display = "none";
+	showAction17.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -462,6 +480,8 @@ action3.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 }
 action4.onclick = function(){
 	showAction1.style.display = "none";
@@ -479,7 +499,8 @@ action4.onclick = function(){
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";
 	showAction15.style.display = "none";
-	showAction16.style.display = "none";	
+	showAction16.style.display = "none";
+	showAction17.style.display = "none";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -512,6 +533,8 @@ action4.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 }
 action5.onclick = function(){
 	showAction1.style.display = "none";
@@ -530,6 +553,7 @@ action5.onclick = function(){
 	showAction14.style.display = "none";	
 	showAction15.style.display = "none";
 	showAction16.style.display = "none";
+	showAction17.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -562,6 +586,8 @@ action5.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 }
 action6.onclick = function(){
 	showAction1.style.display = "none";
@@ -579,7 +605,8 @@ action6.onclick = function(){
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";
 	showAction15.style.display = "none";
-	showAction16.style.display = "none";	
+	showAction16.style.display = "none";
+	showAction17.style.display = "none";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -612,6 +639,8 @@ action6.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 }
 action7.onclick = function(){
 	showAction1.style.display = "none";
@@ -629,7 +658,8 @@ action7.onclick = function(){
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";
 	showAction15.style.display = "none";
-	showAction16.style.display = "none";	
+	showAction16.style.display = "none";
+	showAction17.style.display = "none";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -662,6 +692,8 @@ action7.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 }
 action8.onclick = function(){
 	showAction1.style.display = "none";
@@ -679,7 +711,8 @@ action8.onclick = function(){
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";
 	showAction15.style.display = "none";
-	showAction16.style.display = "none";	
+	showAction16.style.display = "none";
+	showAction17.style.display = "none";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -712,6 +745,8 @@ action8.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 }
 action9.onclick = function(){
 	showAction1.style.display = "none";
@@ -730,6 +765,7 @@ action9.onclick = function(){
 	showAction14.style.display = "none";	
 	showAction15.style.display = "none";
 	showAction16.style.display = "none";
+	showAction17.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -762,6 +798,8 @@ action9.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 };
 action10.onclick = function(){
 	showAction1.style.display = "none";
@@ -780,6 +818,7 @@ action10.onclick = function(){
 	showAction14.style.display = "none";
 	showAction15.style.display = "none";
 	showAction16.style.display = "none";
+	showAction17.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -812,6 +851,8 @@ action10.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 };
 action11.onclick = function(){
 	showAction1.style.display = "none";
@@ -829,7 +870,8 @@ action11.onclick = function(){
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";
 	showAction15.style.display = "none";
-	showAction16.style.display = "none";	
+	showAction16.style.display = "none";
+	showAction17.style.display = "none";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -862,6 +904,8 @@ action11.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 };
 action12.onclick = function(){
 	showAction1.style.display = "none";
@@ -880,6 +924,7 @@ action12.onclick = function(){
 	showAction14.style.display = "none";	
 	showAction15.style.display = "none";
 	showAction16.style.display = "none";
+	showAction17.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -912,6 +957,8 @@ action12.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 };
 action13.onclick = function(){
 	showAction1.style.display = "none";
@@ -930,6 +977,7 @@ action13.onclick = function(){
 	showAction14.style.display = "none";	
 	showAction15.style.display = "none";
 	showAction16.style.display = "none";
+	showAction17.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -962,6 +1010,8 @@ action13.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 };
 action14.onclick = function(){
 	showAction1.style.display = "none";
@@ -979,7 +1029,8 @@ action14.onclick = function(){
 	showAction13.style.display = "none";
 	showAction14.style.display = "flex";
 	showAction15.style.display = "none";
-	showAction16.style.display = "none";	
+	showAction16.style.display = "none";
+	showAction17.style.display = "none";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -1012,6 +1063,8 @@ action14.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 
 };
 action15.onclick = function(){
@@ -1031,6 +1084,7 @@ action15.onclick = function(){
 	showAction14.style.display = "none";
 	showAction15.style.display = "flex";
 	showAction16.style.display = "none";	
+	showAction17.style.display = "none";
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -1063,6 +1117,8 @@ action15.onclick = function(){
 	action15.style.filter = "grayscale(0)";
 	action16.style.opacity = "0.5";
 	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
 };
 action16.onclick = function(){
 	showAction1.style.display = "none";
@@ -1080,7 +1136,8 @@ action16.onclick = function(){
 	showAction13.style.display = "none";
 	showAction14.style.display = "none";
 	showAction15.style.display = "none";
-	showAction16.style.display = "flex";	
+	showAction16.style.display = "flex";
+	showAction17.style.display = "none";	
 	action1.style.opacity = "0.5";
 	action1.style.filter = "grayscale(1)";
 	action2.style.opacity = "0.5";
@@ -1113,9 +1170,63 @@ action16.onclick = function(){
 	action15.style.filter = "grayscale(1)";
 	action16.style.opacity = "1";
 	action16.style.filter = "grayscale(0";
+	action17.style.opacity = "0.5";
+	action17.style.filter = "grayscale(1)";
+};
+action17.onclick = function(){
+	showAction1.style.display = "none";
+	showAction2.style.display = "none";
+	showAction3.style.display = "none";	
+	showAction4.style.display = "none";
+	showAction5.style.display = "none";
+	showAction6.style.display = "none";
+	showAction7.style.display = "none";
+	showAction8.style.display = "none";	
+	showAction9.style.display = "none";	
+	showAction10.style.display = "none";
+	showAction11.style.display = "none";
+	showAction12.style.display = "none";
+	showAction13.style.display = "none";
+	showAction14.style.display = "none";
+	showAction15.style.display = "none";
+	showAction16.style.display = "none";
+	showAction17.style.display = "flex";	
+	action1.style.opacity = "0.5";
+	action1.style.filter = "grayscale(1)";
+	action2.style.opacity = "0.5";
+	action2.style.filter = "grayscale(1)";
+	action3.style.opacity = "0.5";
+	action3.style.filter = "grayscale(1)";	
+	action4.style.opacity = "0.5";
+	action4.style.filter = "grayscale(1)";
+	action5.style.opacity = "0.5";
+	action5.style.filter = "grayscale(1)";
+	action6.style.opacity = "0.5";
+	action6.style.filter = "grayscale(1)";
+	action7.style.opacity = "0.5";
+	action7.style.filter = "grayscale(1)";
+	action8.style.opacity = "0.5";
+	action8.style.filter = "grayscale(1)";	
+	action9.style.opacity = "0.5";
+	action9.style.filter = "grayscale(1)";
+	action10.style.opacity = "0.5";
+	action10.style.filter = "grayscale(1)";
+	action11.style.opacity = "0.5";
+	action11.style.filter = "grayscale(1)";
+	action12.style.opacity = "0.5";
+	action12.style.filter = "grayscale(1)";
+	action13.style.opacity = "0.5";
+	action13.style.filter = "grayscale(1)";
+	action14.style.opacity = "0.5";
+	action14.style.filter = "grayscale(1)";
+	action15.style.opacity = "0.5";
+	action15.style.filter = "grayscale(1)";
+	action16.style.opacity = "0.5";
+	action16.style.filter = "grayscale(1)";
+	action17.style.opacity = "1";
+	action17.style.filter = "grayscale(0.5)";
 
 };
-
 
 ////////////////////////////////////////////////////////////////////////////
 //INTERSECTION OBSERVER hori//
