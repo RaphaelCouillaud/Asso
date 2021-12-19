@@ -108,42 +108,59 @@ setInterval (function(){
 	newYear();
 },1000);
 
+// HIDE SHOW ACTIONS //
+const perso1 = document.getElementById('perso-1'); //options
+const perso2 = document.getElementById('perso-2');
+const perso3 = document.getElementById('perso-3');
+const showPerso1 = document.getElementById('perso-1-text');//choix display
+const showPerso2 = document.getElementById('perso-2-text');
+const showPerso3 = document.getElementById('perso-3-text');
+
+perso1.onclick = function(){
+	showPerso1.style.display = "flex";
+	showPerso2.style.display = "none";
+	showPerso3.style.display = "none";	
+	perso1.style.opacity = "1";
+	perso1.style.filter = "grayscale(0)";
+	perso1.style.transform = "scale(1.25)";
+	perso2.style.opacity = "0.5";
+	perso2.style.filter = "grayscale(1)";
+	perso2.style.transform = "scale(1)";
+	perso3.style.opacity = "0.5";
+	perso3.style.filter = "grayscale(1)";
+	perso3.style.transform = "scale(1)";	
+}
+perso2.onclick = function(){
+	showPerso1.style.display = "none";
+	showPerso2.style.display = "flex";
+	showPerso3.style.display = "none";	
+	perso1.style.opacity = "0.5";
+	perso1.style.filter = "grayscale(1)";
+	perso1.style.transform = "scale(1)";
+	perso2.style.opacity = "1";
+	perso2.style.filter = "grayscale(0)";
+	perso2.style.transform = "scale(1.25)";
+	perso3.style.opacity = "0.5";
+	perso3.style.filter = "grayscale(1)";	
+	perso3.style.transform = "scale(1)";
+}
+perso3.onclick = function(){
+	showPerso1.style.display = "none";
+	showPerso2.style.display = "none";
+	showPerso3.style.display = "flex";	
+	perso1.style.opacity = "0.5";
+	perso1.style.filter = "grayscale(1)";
+	perso1.style.transform = "scale(1)";
+	perso2.style.opacity = "0.5";
+	perso2.style.filter = "grayscale(1)";
+	perso3.style.transform = "scale(1)";
+	perso3.style.opacity = "1";
+	perso3.style.filter = "grayscale(0)";
+	perso3.style.transform = "scale(1.25)";
+	
+};
 
 
-
-
-var counted = 0;
-$(window).scroll(function() {
-
-  var oTop = $('#counter-up').offset().top - window.innerHeight;
-  if (counted == 0 && $(window).scrollTop() > oTop) {
-    $('.numbercounter').each(function() {
-      var $this = $(this),
-        countTo = $this.attr('data-count');
-      $({
-        countNum: $this.text()
-      }).animate({
-          countNum: countTo
-        },
-
-        {
-
-          duration: 2000,
-          easing: 'swing',
-          step: function() {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function() {
-            $this.text(this.countNum);
-            //alert('finished');
-          }
-
-        });
-    });
-    counted = 1;
-  }
-
-});
 ////////////////////////////////////////////////////////////////////////////
 //INTERSECTION OBSERVER hori//
 const ratio = 0.1
