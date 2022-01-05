@@ -85,7 +85,7 @@ menuAnim.addEventListener('click', () => {
 });
 
 //COUNTDOWN//////////////////////////////////////////////////////////
-let countDate = new Date('January 2, 2022 10:30:00').getTime();
+let countDate = new Date('February 6, 2022 10:30:00').getTime();
 function newYear(){
 	let currentTime = new Date().getTime();
 	let gapTime = countDate - currentTime;
@@ -288,7 +288,7 @@ let textscript17 = "Nom de code opération : Promenons-nous dans les bois 2";
         key * 345
       );
     });
-    let textscript18 = "Nom de code opération : Opération mégots";
+let textscript18 = "Nom de code opération : Opération mégots";
     let array18 = Array.from(textscript18);
 
     Object.keys(array18).map((key) => {
@@ -297,7 +297,27 @@ let textscript17 = "Nom de code opération : Promenons-nous dans les bois 2";
         key * 345
       );
     });
+let textscript19 = "Nom de code opération : Détox de plage";
+    let array19 = Array.from(textscript19);
+
+    Object.keys(array19).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription19").innerHTML += array19[key]),
+        key * 200
+      );
+    });
 // HIDE SHOW ACTIONS //
+const action20221 = document.getElementById('action-1'); //options
+const showAction20221 = document.getElementById('action-1-text');
+
+action20221.onclick = function(){
+	showAction20221.style.display = "flex";	
+	action20221.style.opacity = "1";
+	action20221.style.filter = "grayscale(0)";	
+};
+
+
+
 const action1 = document.getElementById('ac-1'); //options
 const action2 = document.getElementById('ac-2');
 const action3 = document.getElementById('ac-3');

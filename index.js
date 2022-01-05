@@ -83,7 +83,7 @@ menuAnim.addEventListener('click', () => {
 });
 
 //COUNTDOWN//////////////////////////////////////////////////////////
-let countDate = new Date('January 2, 2022 10:30:00').getTime();
+let countDate = new Date('February 6, 2022 10:30:00').getTime();
 function newYear(){
 	let currentTime = new Date().getTime();
 	let gapTime = countDate - currentTime;

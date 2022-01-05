@@ -85,7 +85,7 @@ menuAnim.addEventListener('click', () => {
 });
 
 //COUNTDOWN//////////////////////////////////////////////////////////
-let countDate = new Date('January 2, 2022 10:30:00').getTime();
+let countDate = new Date('February 6, 2022 10:30:00').getTime();
 function newYear(){
 	let currentTime = new Date().getTime();
 	let gapTime = countDate - currentTime;
@@ -153,7 +153,7 @@ perso3.onclick = function(){
 	perso1.style.transform = "scale(1)";
 	perso2.style.opacity = "0.5";
 	perso2.style.filter = "grayscale(1)";
-	perso3.style.transform = "scale(1)";
+	perso2.style.transform = "scale(1)";
 	perso3.style.opacity = "1";
 	perso3.style.filter = "grayscale(0)";
 	perso3.style.transform = "scale(1.25)";
