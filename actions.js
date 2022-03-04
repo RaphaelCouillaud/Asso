@@ -315,27 +315,55 @@ let textscript19 = "Nom de code opération : Détox de plage";
         key * 200
       );
     });
+    let textscript21 = "Nom de code opération : Les Gardiens de la Plage";
+    let array21 = Array.from(textscript21);
+
+    Object.keys(array21).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription21").innerHTML += array21[key]),
+        key * 200
+      );
+    });
 // HIDE SHOW ACTIONS //
 const action20221 = document.getElementById('action-1'); //options
 const action20222 = document.getElementById('action-2'); //options
+const action20223 = document.getElementById('action-3'); //options
 const showAction20221 = document.getElementById('action-1-text');
 const showAction20222 = document.getElementById('action-2-text');
+const showAction20223 = document.getElementById('action-3-text');
 
 action20221.onclick = function(){
 	showAction20221.style.display = "flex";	
   showAction20222.style.display = "none";
+  showAction20223.style.display = "none";
 	action20221.style.opacity = "1";
 	action20221.style.filter = "grayscale(0)";
   action20222.style.opacity = "0.5";
   action20222.style.filter = "grayscale(1)";	
+  action20223.style.opacity = "0.5";
+  action20223.style.filter = "grayscale(1)";  
 }
 action20222.onclick = function(){
   showAction20221.style.display = "none"; 
   showAction20222.style.display = "flex";
+  showAction20223.style.display = "none";
   action20221.style.opacity = "0.5";
   action20221.style.filter = "grayscale(1)";
   action20222.style.opacity = "1";
   action20222.style.filter = "grayscale(0)";  
+  action20223.style.opacity = "0.5";
+  action20223.style.filter = "grayscale(1)";  
+};
+action20223.onclick = function(){
+  showAction20221.style.display = "none"; 
+  showAction20222.style.display = "none";
+  showAction20223.style.display = "flex";
+  action20221.style.opacity = "0.5";
+  action20221.style.filter = "grayscale(1)";
+  action20222.style.opacity = "0.5";
+  action20222.style.filter = "grayscale(1)";  
+  action20223.style.opacity = "1";
+  action20223.style.filter = "grayscale(0)";  
 };
 
 
