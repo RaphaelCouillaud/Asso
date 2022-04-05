@@ -333,21 +333,33 @@ let textscript19 = "Nom de code opération : Détox de plage";
         key * 260
       );
     });
+    let textscript23 = "Nom de code opération : Cueillette de Printemps";
+    let array23 = Array.from(textscript23);
+
+    Object.keys(array23).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription23").innerHTML += array23[key]),
+        key * 280
+      );
+    });
 // HIDE SHOW ACTIONS //
 const action20221 = document.getElementById('action-1'); //options
 const action20222 = document.getElementById('action-2'); //options
 const action20223 = document.getElementById('action-3'); //options
 const action20224 = document.getElementById('action-4'); //options
+const action20225 = document.getElementById('action-5'); //options
 const showAction20221 = document.getElementById('action-1-text');
 const showAction20222 = document.getElementById('action-2-text');
 const showAction20223 = document.getElementById('action-3-text');
 const showAction20224 = document.getElementById('action-4-text');
+const showAction20225 = document.getElementById('action-5-text');
 
 action20221.onclick = function(){
 	showAction20221.style.display = "flex";	
   showAction20222.style.display = "none";
   showAction20223.style.display = "none";
   showAction20224.style.display = "none";
+  showAction20225.style.display = "none";
 	action20221.style.opacity = "1";
 	action20221.style.filter = "grayscale(0)";
   action20222.style.opacity = "0.5";
@@ -356,12 +368,15 @@ action20221.onclick = function(){
   action20223.style.filter = "grayscale(1)"; 
   action20224.style.opacity = "0.5";
   action20224.style.filter = "grayscale(1)";   
+  action20225.style.opacity = "0.5";
+  action20225.style.filter = "grayscale(1)";  
 }
 action20222.onclick = function(){
   showAction20221.style.display = "none"; 
   showAction20222.style.display = "flex";
   showAction20223.style.display = "none";
   showAction20224.style.display = "none";
+  showAction20225.style.display = "none";
   action20221.style.opacity = "0.5";
   action20221.style.filter = "grayscale(1)";
   action20222.style.opacity = "1";
@@ -370,12 +385,15 @@ action20222.onclick = function(){
   action20223.style.filter = "grayscale(1)"; 
   action20224.style.opacity = "0.5";
   action20224.style.filter = "grayscale(1)"; 
+  action20225.style.opacity = "0.5";
+  action20225.style.filter = "grayscale(1)";  
 };
 action20223.onclick = function(){
   showAction20221.style.display = "none"; 
   showAction20222.style.display = "none";
   showAction20223.style.display = "flex";
   showAction20224.style.display = "none";
+  showAction20225.style.display = "none";
   action20221.style.opacity = "0.5";
   action20221.style.filter = "grayscale(1)";
   action20222.style.opacity = "0.5";
@@ -384,12 +402,15 @@ action20223.onclick = function(){
   action20223.style.filter = "grayscale(0)";  
   action20224.style.opacity = "0.5";
   action20224.style.filter = "grayscale(1)";
+  action20225.style.opacity = "0.5";
+  action20225.style.filter = "grayscale(1)";  
 };
 action20224.onclick = function(){
   showAction20221.style.display = "none"; 
   showAction20222.style.display = "none";
   showAction20223.style.display = "none";
   showAction20224.style.display = "flex";
+  showAction20225.style.display = "none";
   action20221.style.opacity = "0.5";
   action20221.style.filter = "grayscale(1)";
   action20222.style.opacity = "0.5";
@@ -398,6 +419,25 @@ action20224.onclick = function(){
   action20223.style.filter = "grayscale(1)";  
   action20224.style.opacity = "1";
   action20224.style.filter = "grayscale(0)";
+  action20225.style.opacity = "0.5";
+  action20225.style.filter = "grayscale(1)";  
+};
+action20225.onclick = function(){
+  showAction20221.style.display = "none"; 
+  showAction20222.style.display = "none";
+  showAction20223.style.display = "none";
+  showAction20224.style.display = "none";
+  showAction20225.style.display = "flex";
+  action20221.style.opacity = "0.5";
+  action20221.style.filter = "grayscale(1)";
+  action20222.style.opacity = "0.5";
+  action20222.style.filter = "grayscale(1)";  
+  action20223.style.opacity = "0.5";
+  action20223.style.filter = "grayscale(1)";  
+  action20224.style.opacity = "0.5";
+  action20224.style.filter = "grayscale(1)";
+  action20225.style.opacity = "1";
+  action20225.style.filter = "grayscale(0)";  
 };
 
 
