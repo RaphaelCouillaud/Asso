@@ -378,6 +378,33 @@ let textscript19 = "Nom de code opération : Détox de plage";
         key * 350
       );
     });
+     let textscript28 = "Nom de code opération : World Clean Up Day 2022";
+    let array28 = Array.from(textscript28);
+
+    Object.keys(array28).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription28").innerHTML += array28[key]),
+        key * 360
+      );
+    });
+     let textscript29 = "Nom de code opération : La déchetterie";
+    let array29 = Array.from(textscript29);
+
+    Object.keys(array29).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription29").innerHTML += array29[key]),
+        key * 370
+      );
+    });
+     let textscript30 = "Nom de code opération : À la faveur de l'automne";
+    let array30 = Array.from(textscript30);
+
+    Object.keys(array30).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription30").innerHTML += array30[key]),
+        key * 380
+      );
+    });
 // HIDE SHOW ACTIONS //
 const action20221 = document.getElementById('action-1'); //options
 const action20222 = document.getElementById('action-2'); //options
@@ -388,6 +415,9 @@ const action20226 = document.getElementById('action-6'); //options
 const action20227 = document.getElementById('action-7'); //options
 const action20228 = document.getElementById('action-8'); //options
 const action20229 = document.getElementById('action-9'); //options
+const action202210 = document.getElementById('action-10'); //options
+const action202211 = document.getElementById('action-11'); //options
+const action202212 = document.getElementById('action-12'); //options
 const showAction20221 = document.getElementById('action-1-text');
 const showAction20222 = document.getElementById('action-2-text');
 const showAction20223 = document.getElementById('action-3-text');
@@ -397,6 +427,9 @@ const showAction20226 = document.getElementById('action-6-text');
 const showAction20227 = document.getElementById('action-7-text');
 const showAction20228 = document.getElementById('action-8-text');
 const showAction20229 = document.getElementById('action-9-text');
+const showAction202210 = document.getElementById('action-10-text');
+const showAction202211 = document.getElementById('action-11-text');
+const showAction202212 = document.getElementById('action-12-text');
 
 
 action20221.onclick = function(){
@@ -409,6 +442,9 @@ action20221.onclick = function(){
   showAction20227.style.display = "none";
   showAction20228.style.display = "none";
   showAction20229.style.display = "none";
+  showAction202210.style.display = "none";
+  showAction202211.style.display = "none";
+  showAction202212.style.display = "none";
 	action20221.style.opacity = "1";
 	action20221.style.filter = "grayscale(0)";
   action20222.style.opacity = "0.5";
@@ -427,6 +463,12 @@ action20221.onclick = function(){
   action20228.style.filter = "grayscale(1)";  
   action20229.style.opacity = "0.5";
   action20229.style.filter = "grayscale(1)";  
+  action202210.style.opacity = "0.5";
+  action202210.style.filter = "grayscale(1)";  
+  action202211.style.opacity = "0.5";
+  action202211.style.filter = "grayscale(1)"; 
+  action202212.style.opacity = "0.5";
+  action202212.style.filter = "grayscale(1)"; 
 }
 action20222.onclick = function(){
   showAction20221.style.display = "none"; 
@@ -438,6 +480,9 @@ action20222.onclick = function(){
   showAction20227.style.display = "none";
   showAction20228.style.display = "none";
   showAction20229.style.display = "none";
+  showAction202210.style.display = "none";
+  showAction202211.style.display = "none";
+  showAction202212.style.display = "none";
   action20221.style.opacity = "0.5";
   action20221.style.filter = "grayscale(1)";
   action20222.style.opacity = "1";
@@ -455,7 +500,13 @@ action20222.onclick = function(){
   action20228.style.opacity = "0.5";
   action20228.style.filter = "grayscale(1)";  
   action20229.style.opacity = "0.5";
-  action20229.style.filter = "grayscale(1)";  
+  action20229.style.filter = "grayscale(1)"; 
+  action202210.style.opacity = "0.5";
+  action202210.style.filter = "grayscale(1)";   
+  action202211.style.opacity = "0.5";
+  action202211.style.filter = "grayscale(1)";
+  action202212.style.opacity = "0.5";
+  action202212.style.filter = "grayscale(1)";
 };
 action20223.onclick = function(){
   showAction20221.style.display = "none"; 
@@ -467,6 +518,9 @@ action20223.onclick = function(){
   showAction20227.style.display = "none";
   showAction20228.style.display = "none";
   showAction20229.style.display = "none";
+  showAction202210.style.display = "none";
+  showAction202211.style.display = "none";
+  showAction202212.style.display = "none";
   action20221.style.opacity = "0.5";
   action20221.style.filter = "grayscale(1)";
   action20222.style.opacity = "0.5";
@@ -485,6 +539,12 @@ action20223.onclick = function(){
   action20228.style.filter = "grayscale(1)"; 
   action20229.style.opacity = "0.5";
   action20229.style.filter = "grayscale(1)";  
+  action202210.style.opacity = "0.5";
+  action202210.style.filter = "grayscale(1)";  
+  action202211.style.opacity = "0.5";
+  action202211.style.filter = "grayscale(1)";
+  action202212.style.opacity = "0.5";
+  action202212.style.filter = "grayscale(1)";
 };
 action20224.onclick = function(){
   showAction20221.style.display = "none"; 
@@ -496,6 +556,9 @@ action20224.onclick = function(){
   showAction20227.style.display = "none";
   showAction20228.style.display = "none";
   showAction20229.style.display = "none";
+  showAction202210.style.display = "none";
+  showAction202211.style.display = "none";
+  showAction202212.style.display = "none";
   action20221.style.opacity = "0.5";
   action20221.style.filter = "grayscale(1)";
   action20222.style.opacity = "0.5";
@@ -513,7 +576,13 @@ action20224.onclick = function(){
   action20228.style.opacity = "0.5";
   action20228.style.filter = "grayscale(1)"; 
   action20229.style.opacity = "0.5";
-  action20229.style.filter = "grayscale(1)";    
+  action20229.style.filter = "grayscale(1)"; 
+  action202210.style.opacity = "0.5";
+  action202210.style.filter = "grayscale(1)";  
+  action202211.style.opacity = "0.5";
+  action202211.style.filter = "grayscale(1)";  
+  action202212.style.opacity = "0.5";
+  action202212.style.filter = "grayscale(1)"; 
 };
 action20225.onclick = function(){
   showAction20221.style.display = "none"; 
@@ -525,6 +594,9 @@ action20225.onclick = function(){
   showAction20227.style.display = "none";
   showAction20228.style.display = "none";
   showAction20229.style.display = "none";
+  showAction202210.style.display = "none";
+  showAction202211.style.display = "none";
+  showAction202212.style.display = "none";
   action20221.style.opacity = "0.5";
   action20221.style.filter = "grayscale(1)";
   action20222.style.opacity = "0.5";
@@ -542,7 +614,13 @@ action20225.onclick = function(){
   action20228.style.opacity = "0.5";
   action20228.style.filter = "grayscale(1)"; 
   action20229.style.opacity = "0.5";
-  action20229.style.filter = "grayscale(1)";  
+  action20229.style.filter = "grayscale(1)"; 
+  action202210.style.opacity = "0.5";
+  action202210.style.filter = "grayscale(1)";
+  action202211.style.opacity = "0.5";
+  action202211.style.filter = "grayscale(1)"; 
+  action202212.style.opacity = "0.5";
+  action202212.style.filter = "grayscale(1)";  
 };
 action20226.onclick = function(){
   showAction20221.style.display = "none"; 
@@ -554,6 +632,9 @@ action20226.onclick = function(){
   showAction20227.style.display = "none";
   showAction20228.style.display = "none";
   showAction20229.style.display = "none";
+  showAction202210.style.display = "none";
+  showAction202211.style.display = "none";
+  showAction202212.style.display = "none";
   action20221.style.opacity = "0.5";
   action20221.style.filter = "grayscale(1)";
   action20222.style.opacity = "0.5";
@@ -572,6 +653,12 @@ action20226.onclick = function(){
   action20228.style.filter = "grayscale(1)"; 
   action20229.style.opacity = "0.5";
   action20229.style.filter = "grayscale(1)"; 
+  action202210.style.opacity = "0.5";
+  action202210.style.filter = "grayscale(1)"; 
+  action202211.style.opacity = "0.5";
+  action202211.style.filter = "grayscale(1)"; 
+  action202212.style.opacity = "0.5";
+  action202212.style.filter = "grayscale(1)";
 };
 action20227.onclick = function(){
   showAction20221.style.display = "none"; 
@@ -583,6 +670,9 @@ action20227.onclick = function(){
   showAction20227.style.display = "flex";
   showAction20228.style.display = "none";
   showAction20229.style.display = "none";
+  showAction202210.style.display = "none";
+  showAction202211.style.display = "none";
+  showAction202212.style.display = "none";
   action20221.style.opacity = "0.5";
   action20221.style.filter = "grayscale(1)";
   action20222.style.opacity = "0.5";
@@ -601,6 +691,12 @@ action20227.onclick = function(){
   action20228.style.filter = "grayscale(1)"; 
   action20229.style.opacity = "0.5";
   action20229.style.filter = "grayscale(1)"; 
+  action202210.style.opacity = "0.5";
+  action202210.style.filter = "grayscale(1)"; 
+  action202211.style.opacity = "0.5";
+  action202211.style.filter = "grayscale(1)"; 
+  action202212.style.opacity = "0.5";
+  action202212.style.filter = "grayscale(1)";
 };
 action20228.onclick = function(){
   showAction20221.style.display = "none"; 
@@ -612,6 +708,9 @@ action20228.onclick = function(){
   showAction20227.style.display = "none";
   showAction20228.style.display = "flex";
   showAction20229.style.display = "none";
+  showAction202210.style.display = "none";
+  showAction202211.style.display = "none";
+  showAction202212.style.display = "none";
   action20221.style.opacity = "0.5";
   action20221.style.filter = "grayscale(1)";
   action20222.style.opacity = "0.5";
@@ -630,6 +729,12 @@ action20228.onclick = function(){
   action20228.style.filter = "grayscale(0)"; 
   action20229.style.opacity = "0.5";
   action20229.style.filter = "grayscale(1)"; 
+  action202210.style.opacity = "0.5";
+  action202210.style.filter = "grayscale(1)"; 
+  action202211.style.opacity = "0.5";
+  action202211.style.filter = "grayscale(1)"; 
+  action202212.style.opacity = "0.5";
+  action202212.style.filter = "grayscale(1)";
 };
 action20229.onclick = function(){
   showAction20221.style.display = "none"; 
@@ -641,6 +746,9 @@ action20229.onclick = function(){
   showAction20227.style.display = "none";
   showAction20228.style.display = "none";
   showAction20229.style.display = "flex";
+  showAction202210.style.display = "none";
+  showAction202211.style.display = "none";
+  showAction202212.style.display = "none";
   action20221.style.opacity = "0.5";
   action20221.style.filter = "grayscale(1)";
   action20222.style.opacity = "0.5";
@@ -659,8 +767,127 @@ action20229.onclick = function(){
   action20228.style.filter = "grayscale(1)"; 
   action20229.style.opacity = "1";
   action20229.style.filter = "grayscale(0)"; 
+  action202210.style.opacity = "0.5";
+  action202210.style.filter = "grayscale(1)"; 
+  action202211.style.opacity = "0.5";
+  action202211.style.filter = "grayscale(1)"; 
+  action202212.style.opacity = "0.5";
+  action202212.style.filter = "grayscale(1)";
 };
-
+action202210.onclick = function(){
+  showAction20221.style.display = "none"; 
+  showAction20222.style.display = "none";
+  showAction20223.style.display = "none";
+  showAction20224.style.display = "none";
+  showAction20225.style.display = "none";
+  showAction20226.style.display = "none";
+  showAction20227.style.display = "none";
+  showAction20228.style.display = "none";
+  showAction20229.style.display = "none";
+  showAction202210.style.display = "flex";
+  showAction202211.style.display = "none";
+  showAction202212.style.display = "none";
+  action20221.style.opacity = "0.5";
+  action20221.style.filter = "grayscale(1)";
+  action20222.style.opacity = "0.5";
+  action20222.style.filter = "grayscale(1)";  
+  action20223.style.opacity = "0.5";
+  action20223.style.filter = "grayscale(1)";  
+  action20224.style.opacity = "0.5";
+  action20224.style.filter = "grayscale(1)";
+  action20225.style.opacity = "0.5";
+  action20225.style.filter = "grayscale(1)";  
+  action20226.style.opacity = "0.5";
+  action20226.style.filter = "grayscale(1)"; 
+  action20227.style.opacity = "0.5";
+  action20227.style.filter = "grayscale(1)"; 
+  action20228.style.opacity = "0.5";
+  action20228.style.filter = "grayscale(1)"; 
+  action20229.style.opacity = "0.5";
+  action20229.style.filter = "grayscale(1)"; 
+  action202210.style.opacity = "1";
+  action202210.style.filter = "grayscale(0)";  
+  action202211.style.opacity = "0.5";
+  action202211.style.filter = "grayscale(1)";
+  action202212.style.opacity = "0.5";
+  action202212.style.filter = "grayscale(1)";
+};
+action202211.onclick = function(){
+  showAction20221.style.display = "none"; 
+  showAction20222.style.display = "none";
+  showAction20223.style.display = "none";
+  showAction20224.style.display = "none";
+  showAction20225.style.display = "none";
+  showAction20226.style.display = "none";
+  showAction20227.style.display = "none";
+  showAction20228.style.display = "none";
+  showAction20229.style.display = "none";
+  showAction202210.style.display = "none";
+  showAction202211.style.display = "flex";
+  showAction202212.style.display = "none";
+  action20221.style.opacity = "0.5";
+  action20221.style.filter = "grayscale(1)";
+  action20222.style.opacity = "0.5";
+  action20222.style.filter = "grayscale(1)";  
+  action20223.style.opacity = "0.5";
+  action20223.style.filter = "grayscale(1)";  
+  action20224.style.opacity = "0.5";
+  action20224.style.filter = "grayscale(1)";
+  action20225.style.opacity = "0.5";
+  action20225.style.filter = "grayscale(1)";  
+  action20226.style.opacity = "0.5";
+  action20226.style.filter = "grayscale(1)"; 
+  action20227.style.opacity = "0.5";
+  action20227.style.filter = "grayscale(1)"; 
+  action20228.style.opacity = "0.5";
+  action20228.style.filter = "grayscale(1)"; 
+  action20229.style.opacity = "0.5";
+  action20229.style.filter = "grayscale(1)"; 
+  action202210.style.opacity = "0.5";
+  action202210.style.filter = "grayscale(1)";  
+  action202211.style.opacity = "1";
+  action202211.style.filter = "grayscale(0)";
+  action202212.style.opacity = "0.5";
+  action202212.style.filter = "grayscale(1)";
+};
+action202212.onclick = function(){
+  showAction20221.style.display = "none"; 
+  showAction20222.style.display = "none";
+  showAction20223.style.display = "none";
+  showAction20224.style.display = "none";
+  showAction20225.style.display = "none";
+  showAction20226.style.display = "none";
+  showAction20227.style.display = "none";
+  showAction20228.style.display = "none";
+  showAction20229.style.display = "none";
+  showAction202210.style.display = "none";
+  showAction202211.style.display = "none";
+  showAction202212.style.display = "flex";
+  action20221.style.opacity = "0.5";
+  action20221.style.filter = "grayscale(1)";
+  action20222.style.opacity = "0.5";
+  action20222.style.filter = "grayscale(1)";  
+  action20223.style.opacity = "0.5";
+  action20223.style.filter = "grayscale(1)";  
+  action20224.style.opacity = "0.5";
+  action20224.style.filter = "grayscale(1)";
+  action20225.style.opacity = "0.5";
+  action20225.style.filter = "grayscale(1)";  
+  action20226.style.opacity = "0.5";
+  action20226.style.filter = "grayscale(1)"; 
+  action20227.style.opacity = "0.5";
+  action20227.style.filter = "grayscale(1)"; 
+  action20228.style.opacity = "0.5";
+  action20228.style.filter = "grayscale(1)"; 
+  action20229.style.opacity = "0.5";
+  action20229.style.filter = "grayscale(1)"; 
+  action202210.style.opacity = "0.5";
+  action202210.style.filter = "grayscale(1)";  
+  action202211.style.opacity = "0.5";
+  action202211.style.filter = "grayscale(1)";
+  action202212.style.opacity = "1";
+  action202212.style.filter = "grayscale(0)";
+};
 
 
 const action1 = document.getElementById('ac-1'); //options
