@@ -85,7 +85,7 @@ menuAnim.addEventListener('click', () => {
 });
 
 //COUNTDOWN//////////////////////////////////////////////////////////
-let countDate = new Date('March 26, 2023 14:00:00').getTime();
+let countDate = new Date('April 30, 2023 10:00:00').getTime();
 function newYear(){
 	let currentTime = new Date().getTime();
 	let gapTime = countDate - currentTime;
