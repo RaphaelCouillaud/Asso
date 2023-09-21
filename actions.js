@@ -85,7 +85,7 @@ menuAnim.addEventListener('click', () => {
 });
 
 //COUNTDOWN//////////////////////////////////////////////////////////
-let countDate = new Date('September 16, 2023 09:30:00').getTime();
+let countDate = new Date('October 8, 2023 09:30:00').getTime();
 function newYear(){
 	let currentTime = new Date().getTime();
 	let gapTime = countDate - currentTime;
@@ -450,6 +450,142 @@ let textscript19 = "Nom de code opération : Détox de plage";
         key * 405
       );
     });
+     let textscript36 = "Nom de code opération : Trash Lover";
+    let array36 = Array.from(textscript36);
+    Object.keys(array36).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription36").innerHTML += array36[key]),
+        key * 305
+      );
+    });
+     let textscript37 = "Nom de code opération : Cueillette de Printemps 2";
+    let array37 = Array.from(textscript37);
+    Object.keys(array37).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription37").innerHTML += array37[key]),
+        key * 315
+      );
+    });
+     let textscript38 = "Nom de code opération : Baie Watch";
+    let array38 = Array.from(textscript38);
+    Object.keys(array38).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription38").innerHTML += array38[key]),
+        key * 325
+      );
+    });
+     let textscript39 = "Nom de code opération : Planète Propre";
+    let array39 = Array.from(textscript39);
+    Object.keys(array39).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription39").innerHTML += array39[key]),
+        key * 335
+      );
+    });
+     let textscript40 = "Nom de code opération : WCUD 23";
+    let array40 = Array.from(textscript40);
+    Object.keys(array40).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription40").innerHTML += array40[key]),
+        key * 345
+      );
+    });
+// HIDE SHOW ACTIONS //
+const action20231 = document.getElementById('action23-1'); //options
+const action20232 = document.getElementById('action23-2'); //options
+const action20233 = document.getElementById('action23-3'); //options
+const action20234 = document.getElementById('action23-4'); //options
+const action20235 = document.getElementById('action23-5'); //options
+const showAction20231 = document.getElementById('action23-1-text');
+const showAction20232 = document.getElementById('action23-2-text');
+const showAction20233 = document.getElementById('action23-3-text');
+const showAction20234 = document.getElementById('action23-4-text');
+const showAction20235 = document.getElementById('action23-5-text');
+action20231.onclick = function(){
+  showAction20231.style.display = "flex"; 
+  showAction20232.style.display = "none";  
+  showAction20233.style.display = "none"; 
+  showAction20234.style.display = "none";  
+  showAction20235.style.display = "none";  
+  action20231.style.opacity = "1";
+  action20231.style.filter = "grayscale(0)";
+  action20232.style.opacity = "0.5";
+  action20232.style.filter = "grayscale(1)";  
+  action20233.style.opacity = "0.5";
+  action20233.style.filter = "grayscale(1)"; 
+  action20234.style.opacity = "0.5";
+  action20234.style.filter = "grayscale(1)"; 
+  action20235.style.opacity = "0.5";
+  action20235.style.filter = "grayscale(1)";  
+}
+action20232.onclick = function(){
+  showAction20231.style.display = "none"; 
+  showAction20232.style.display = "flex";  
+  showAction20233.style.display = "none"; 
+  showAction20234.style.display = "none";
+  showAction20235.style.display = "none"; 
+  action20231.style.opacity = "0.5";
+  action20231.style.filter = "grayscale(1)";
+  action20232.style.opacity = "1";
+  action20232.style.filter = "grayscale(0)"; 
+  action20233.style.opacity = "0.5";
+  action20233.style.filter = "grayscale(1)";
+  action20234.style.opacity = "0.5";
+  action20234.style.filter = "grayscale(1)"; 
+  action20235.style.opacity = "0.5";
+  action20235.style.filter = "grayscale(1)";
+  };
+action20233.onclick = function(){
+  showAction20231.style.display = "none"; 
+  showAction20232.style.display = "none";  
+  showAction20233.style.display = "flex";
+  showAction20234.style.display = "none";
+  showAction20235.style.display = "none";  
+  action20231.style.opacity = "0.5";
+  action20231.style.filter = "grayscale(1)";
+  action20232.style.opacity = "0.5";
+  action20232.style.filter = "grayscale(1)"; 
+  action20233.style.opacity = "1";
+  action20233.style.filter = "grayscale(0)"; 
+  action20234.style.opacity = "0.5";
+  action20234.style.filter = "grayscale(1)";
+  action20235.style.opacity = "0.5";
+  action20235.style.filter = "grayscale(1)";
+  };
+  action20234.onclick = function(){
+  showAction20231.style.display = "none"; 
+  showAction20232.style.display = "none";  
+  showAction20233.style.display = "none";
+  showAction20234.style.display = "flex"; 
+  showAction20235.style.display = "none"; 
+  action20231.style.opacity = "0.5";
+  action20231.style.filter = "grayscale(1)";
+  action20232.style.opacity = "0.5";
+  action20232.style.filter = "grayscale(1)"; 
+  action20233.style.opacity = "0.5";
+  action20233.style.filter = "grayscale(1)"; 
+  action20234.style.opacity = "1";
+  action20234.style.filter = "grayscale(0)";
+  action20235.style.opacity = "0.5";
+  action20235.style.filter = "grayscale(1)";
+  };
+  action20235.onclick = function(){
+  showAction20231.style.display = "none"; 
+  showAction20232.style.display = "none";  
+  showAction20233.style.display = "none";
+  showAction20234.style.display = "none"; 
+  showAction20235.style.display = "flex"; 
+  action20231.style.opacity = "0.5";
+  action20231.style.filter = "grayscale(1)";
+  action20232.style.opacity = "0.5";
+  action20232.style.filter = "grayscale(1)"; 
+  action20233.style.opacity = "0.5";
+  action20233.style.filter = "grayscale(1)"; 
+  action20234.style.opacity = "0.5";
+  action20234.style.filter = "grayscale(1)";
+  action20235.style.opacity = "1";
+  action20235.style.filter = "grayscale(0)";
+  };
 // HIDE SHOW ACTIONS //
 const action20221 = document.getElementById('action-1'); //options
 const action20222 = document.getElementById('action-2'); //options
