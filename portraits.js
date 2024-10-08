@@ -85,7 +85,7 @@ menuAnim.addEventListener('click', () => {
 });
 
 //COUNTDOWN//////////////////////////////////////////////////////////
-let countDate = new Date('September 21, 2024 10:00:00').getTime();
+let countDate = new Date('October 20, 2024 10:00:00').getTime();
 function newYear(){
 	let currentTime = new Date().getTime();
 	let gapTime = countDate - currentTime;
@@ -106,6 +106,29 @@ function newYear(){
 }
 setInterval (function(){
 	newYear();
+},1000);
+
+let countDate2 = new Date('November 24, 2024 10:00:00').getTime();
+function newYear2(){
+	let currentTime2 = new Date().getTime();
+	let gapTime2 = countDate2 - currentTime2;
+		let seconds2 = 1000;
+		let minutes2 = seconds2 * 60;
+		let hours2 = minutes2 * 60;
+		let days2 = hours2 * 24;
+
+	let daysCount2 = Math.floor(gapTime2 / (days2));
+	let hoursCount2 = Math.floor((gapTime2 % (days2)) / (hours2));
+	let minutesCount2 = Math.floor((gapTime2 % (hours2)) / (minutes2));
+	let secondsCount2 = Math.floor((gapTime2 % (minutes2)) / seconds2);
+
+	document.getElementById('days2').innerText = daysCount2;
+	document.getElementById('hours2').innerText = hoursCount2;
+	document.getElementById('minutes2').innerText = minutesCount2;
+	document.getElementById('seconds2').innerText = secondsCount2;
+}
+setInterval (function(){
+	newYear2();
 },1000);
 
 // HIDE SHOW ACTIONS //
