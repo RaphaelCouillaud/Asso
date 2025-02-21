@@ -108,7 +108,7 @@ setInterval (function(){
 	newYear();
 },1000);
 
-let countDate2 = new Date('February 16, 2025 14:00:00').getTime();
+let countDate2 = new Date('March 16, 2025 10:00:00').getTime();
 function newYear2(){
 	let currentTime2 = new Date().getTime();
 	let gapTime2 = countDate2 - currentTime2;
