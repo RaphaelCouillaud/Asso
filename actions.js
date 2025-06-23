@@ -608,7 +608,429 @@ let textscript19 = "Nom de code opération : Détox de plage";
         key * 320
       );
     });
-    
+      let textscript53= "Nom de code opération : Montportail";
+    let array53 = Array.from(textscript53);
+    Object.keys(array53).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription53").innerHTML += array53[key]),
+        key * 180
+      );
+    });
+      let textscript54= "Nom de code opération : Dépollution XXL";
+    let array54 = Array.from(textscript54);
+    Object.keys(array54).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription54").innerHTML += array54[key]),
+        key * 200
+      );
+    });
+      let textscript55= "Nom de code opération : Les Gardiens de Marennes";
+    let array55 = Array.from(textscript55);
+    Object.keys(array55).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription55").innerHTML += array55[key]),
+        key * 220
+      );
+    });
+      let textscript56= "Nom de code opération : Des coeurs sur Bourcefranc";
+    let array56 = Array.from(textscript56);
+    Object.keys(array56).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription56").innerHTML += array56[key]),
+        key * 240
+      );
+    });
+      let textscript57= "Nom de code opération : Le Galon d'Or";
+    let array57 = Array.from(textscript57);
+    Object.keys(array57).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription57").innerHTML += array57[key]),
+        key * 260
+      );
+    });
+      let textscript58= "Nom de code opération : Le Lycée de la mer et du Littoral";
+    let array58 = Array.from(textscript58);
+    Object.keys(array58).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription58").innerHTML += array58[key]),
+        key * 280
+      );
+    });
+        let textscript59= "Nom de code opération : Le club Nature";
+    let array59 = Array.from(textscript59);
+    Object.keys(array59).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription59").innerHTML += array59[key]),
+        key * 300
+      );
+    });
+         let textscript60= "Nom de code opération : Les Bois de Saint-Just";
+    let array60= Array.from(textscript60);
+    Object.keys(array60).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription60").innerHTML += array60[key]),
+        key * 320
+      );
+    });
+         let textscript61= "Nom de code opération : Faites MHB propre";
+    let array61= Array.from(textscript61);
+    Object.keys(array61).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription61").innerHTML += array61[key]),
+        key * 330
+      );
+    });
+         let textscript62= "Nom de code opération : Vive l'éco-pétanque";
+    let array62= Array.from(textscript62);
+    Object.keys(array62).map((key) => {
+      setTimeout(
+        () => (document.getElementById("headerdescription62").innerHTML += array62[key]),
+        key * 340
+      );
+    });
+   
+
+// HIDE SHOW ACTIONS //
+const action20251 = document.getElementById('action25-1'); //options
+const action20252 = document.getElementById('action25-2'); //options
+const action20253 = document.getElementById('action25-3'); //options
+const action20254 = document.getElementById('action25-4'); //options
+const action20255 = document.getElementById('action25-5'); //options
+const action20256 = document.getElementById('action25-6'); //options
+const action20257 = document.getElementById('action25-7'); //options
+const action20258 = document.getElementById('action25-8'); //options
+const action20259 = document.getElementById('action25-9'); //options
+const action202510 = document.getElementById('action25-10'); //options
+const showAction20251 = document.getElementById('action25-1-text');
+const showAction20252 = document.getElementById('action25-2-text');
+const showAction20253 = document.getElementById('action25-3-text');
+const showAction20254 = document.getElementById('action25-4-text');
+const showAction20255 = document.getElementById('action25-5-text');
+const showAction20256 = document.getElementById('action25-6-text');
+const showAction20257 = document.getElementById('action25-7-text');
+const showAction20258 = document.getElementById('action25-8-text');
+const showAction20259 = document.getElementById('action25-9-text');
+const showAction202510 = document.getElementById('action25-10-text');
+action20251.onclick = function(){
+  showAction20251.style.display = "flex"; 
+  showAction20252.style.display = "none";
+  showAction20253.style.display = "none";
+  showAction20254.style.display = "none";
+  showAction20255.style.display = "none";
+  showAction20256.style.display = "none";
+  showAction20257.style.display = "none";
+  showAction20258.style.display = "none";
+  showAction20259.style.display = "none";
+  showAction202510.style.display = "none";
+  action20251.style.opacity = "1";
+  action20251.style.filter = "grayscale(0)";
+  action20252.style.opacity = "0.5";
+  action20252.style.filter = "grayscale(1)";  
+  action20253.style.opacity = "0.5";
+  action20253.style.filter = "grayscale(1)";
+  action20254.style.opacity = "0.5";
+  action20254.style.filter = "grayscale(1)";
+  action20255.style.opacity = "0.5";
+  action20255.style.filter = "grayscale(1)";
+   action20256.style.opacity = "0.5";
+  action20256.style.filter = "grayscale(1)";
+   action20257.style.opacity = "0.5";
+  action20257.style.filter = "grayscale(1)";
+    action20258.style.opacity = "0.5";
+  action20258.style.filter = "grayscale(1)";
+    action20259.style.opacity = "0.5";
+  action20259.style.filter = "grayscale(1)";
+    action202510.style.opacity = "0.5";
+  action202510.style.filter = "grayscale(1)";
+ }
+action20252.onclick = function(){
+  showAction20251.style.display = "none"; 
+  showAction20252.style.display = "flex";
+  showAction20253.style.display = "none";  
+  showAction20254.style.display = "none";  
+  showAction20255.style.display = "none";
+  showAction20256.style.display = "none";
+  showAction20257.style.display = "none";
+  showAction20258.style.display = "none";
+  showAction20259.style.display = "none";
+  showAction202510.style.display = "none";
+  action20251.style.opacity = "0.5";
+  action20251.style.filter = "grayscale(1)";
+  action20252.style.opacity = "1";
+  action20252.style.filter = "grayscale(0)"; 
+  action20253.style.opacity = "0.5";
+  action20253.style.filter = "grayscale(1)";
+   action20254.style.opacity = "0.5";
+  action20254.style.filter = "grayscale(1)";
+  action20255.style.opacity = "0.5";
+  action20255.style.filter = "grayscale(1)";
+   action20256.style.opacity = "0.5";
+  action20256.style.filter = "grayscale(1)";
+    action20257.style.opacity = "0.5";
+  action20257.style.filter = "grayscale(1)";
+    action20258.style.opacity = "0.5";
+  action20258.style.filter = "grayscale(1)";
+    action20259.style.opacity = "0.5";
+  action20259.style.filter = "grayscale(1)";
+    action202510.style.opacity = "0.5";
+  action202510.style.filter = "grayscale(1)";
+    };
+   action20253.onclick = function(){
+  showAction20251.style.display = "none"; 
+  showAction20252.style.display = "none";
+  showAction20253.style.display = "flex";  
+  showAction20254.style.display = "none";  
+  showAction20255.style.display = "none";
+  showAction20256.style.display = "none";
+  showAction20257.style.display = "none";
+  showAction20258.style.display = "none";
+  showAction20259.style.display = "none";
+  showAction202510.style.display = "none";
+  action20251.style.opacity = "0.5";
+  action20251.style.filter = "grayscale(1)";
+  action20252.style.opacity = "0.5";
+  action20252.style.filter = "grayscale(1)"; 
+  action20253.style.opacity = "1";
+  action20253.style.filter = "grayscale(0)";  
+   action20254.style.opacity = "0.5";
+  action20254.style.filter = "grayscale(1)";
+  action20255.style.opacity = "0.5";
+  action20255.style.filter = "grayscale(1)";
+   action20256.style.opacity = "0.5";
+  action20256.style.filter = "grayscale(1)";
+    action20257.style.opacity = "0.5";
+  action20257.style.filter = "grayscale(1)";
+    action20258.style.opacity = "0.5";
+  action20258.style.filter = "grayscale(1)";
+    action20259.style.opacity = "0.5";
+  action20259.style.filter = "grayscale(1)";
+    action202510.style.opacity = "0.5";
+  action202510.style.filter = "grayscale(1)";
+    };
+      action20254.onclick = function(){
+  showAction20251.style.display = "none"; 
+  showAction20252.style.display = "none";
+  showAction20253.style.display = "none";  
+  showAction20254.style.display = "flex"; 
+  showAction20255.style.display = "none"; 
+  showAction20256.style.display = "none";
+  showAction20257.style.display = "none";
+  showAction20258.style.display = "none";
+  showAction20259.style.display = "none";
+  showAction202510.style.display = "none";
+  action20251.style.opacity = "0.5";
+  action20251.style.filter = "grayscale(1)";
+  action20252.style.opacity = "0.5";
+  action20252.style.filter = "grayscale(1)"; 
+  action20253.style.opacity = "0.5";
+  action20253.style.filter = "grayscale(1)";  
+   action20254.style.opacity = "1";
+  action20254.style.filter = "grayscale(0)";
+  action20255.style.opacity = "0.5";
+  action20255.style.filter = "grayscale(1)";
+   action20256.style.opacity = "0.5";
+  action20256.style.filter = "grayscale(1)";
+    action20257.style.opacity = "0.5";
+  action20257.style.filter = "grayscale(1)";
+    action20258.style.opacity = "0.5";
+  action20258.style.filter = "grayscale(1)";
+    action20259.style.opacity = "0.5";
+  action20259.style.filter = "grayscale(1)";
+    action202510.style.opacity = "0.5";
+  action202510.style.filter = "grayscale(1)";
+    };
+   action20255.onclick = function(){
+  showAction20251.style.display = "none"; 
+  showAction20252.style.display = "none";
+  showAction20253.style.display = "none";  
+  showAction20254.style.display = "none"; 
+  showAction20255.style.display = "flex"; 
+  showAction20256.style.display = "none";
+  showAction20257.style.display = "none";
+  showAction20258.style.display = "none";
+  showAction20259.style.display = "none";
+  showAction202510.style.display = "none";
+  action20251.style.opacity = "0.5";
+  action20251.style.filter = "grayscale(1)";
+  action20252.style.opacity = "0.5";
+  action20252.style.filter = "grayscale(1)"; 
+  action20253.style.opacity = "0.5";
+  action20253.style.filter = "grayscale(1)";  
+   action20254.style.opacity = "0.5";
+  action20254.style.filter = "grayscale(1)";
+  action20255.style.opacity = "1";
+  action20255.style.filter = "grayscale(0)";
+   action20256.style.opacity = "0.5";
+  action20256.style.filter = "grayscale(1)";
+    action20257.style.opacity = "0.5";
+  action20257.style.filter = "grayscale(1)";
+    action20258.style.opacity = "0.5";
+  action20258.style.filter = "grayscale(1)";
+    action20259.style.opacity = "0.5";
+  action20259.style.filter = "grayscale(1)";
+    action202510.style.opacity = "0.5";
+  action202510.style.filter = "grayscale(1)";
+    };
+     action20256.onclick = function(){
+  showAction20251.style.display = "none"; 
+  showAction20252.style.display = "none";
+  showAction20253.style.display = "none";  
+  showAction20254.style.display = "none"; 
+  showAction20255.style.display = "none"; 
+  showAction20256.style.display = "flex";
+  showAction20257.style.display = "none";
+  showAction20258.style.display = "none";
+  showAction20259.style.display = "none";
+  showAction202510.style.display = "none";
+  action20251.style.opacity = "0.5";
+  action20251.style.filter = "grayscale(1)";
+  action20252.style.opacity = "0.5";
+  action20252.style.filter = "grayscale(1)"; 
+  action20253.style.opacity = "0.5";
+  action20253.style.filter = "grayscale(1)";  
+   action20254.style.opacity = "0.5";
+  action20254.style.filter = "grayscale(1)";
+  action20255.style.opacity = "0.5";
+  action20255.style.filter = "grayscale(1)";
+   action20256.style.opacity = "1";
+  action20256.style.filter = "grayscale(0)";
+    action20257.style.opacity = "0.5";
+  action20257.style.filter = "grayscale(1)";
+    action20258.style.opacity = "0.5";
+  action20258.style.filter = "grayscale(1)";
+    action20259.style.opacity = "0.5";
+  action20259.style.filter = "grayscale(1)";
+    action202510.style.opacity = "0.5";
+  action202510.style.filter = "grayscale(1)";
+    };
+    action20257.onclick = function(){
+  showAction20251.style.display = "none"; 
+  showAction20252.style.display = "none";
+  showAction20253.style.display = "none";  
+  showAction20254.style.display = "none"; 
+  showAction20255.style.display = "none"; 
+  showAction20256.style.display = "none";
+  showAction20257.style.display = "flex";
+  showAction20258.style.display = "none";
+  showAction20259.style.display = "none";
+  showAction202510.style.display = "none";
+  action20251.style.opacity = "0.5";
+  action20251.style.filter = "grayscale(1)";
+  action20252.style.opacity = "0.5";
+  action20252.style.filter = "grayscale(1)"; 
+  action20253.style.opacity = "0.5";
+  action20253.style.filter = "grayscale(1)";  
+   action20254.style.opacity = "0.5";
+  action20254.style.filter = "grayscale(1)";
+  action20255.style.opacity = "0.5";
+  action20255.style.filter = "grayscale(1)";
+   action20256.style.opacity = "0.5";
+  action20256.style.filter = "grayscale(1)";
+    action20257.style.opacity = "1";
+  action20257.style.filter = "grayscale(0)";
+    action20258.style.opacity = "0.5";
+  action20258.style.filter = "grayscale(1)";
+    action20259.style.opacity = "0.5";
+  action20259.style.filter = "grayscale(1)";
+    action202510.style.opacity = "0.5";
+  action202510.style.filter = "grayscale(1)";
+    };
+     action20258.onclick = function(){
+  showAction20251.style.display = "none"; 
+  showAction20252.style.display = "none";
+  showAction20253.style.display = "none";  
+  showAction20254.style.display = "none"; 
+  showAction20255.style.display = "none"; 
+  showAction20256.style.display = "none";
+  showAction20257.style.display = "none";
+  showAction20258.style.display = "flex";
+  showAction20259.style.display = "none";
+  showAction202510.style.display = "none";
+  action20251.style.opacity = "0.5";
+  action20251.style.filter = "grayscale(1)";
+  action20252.style.opacity = "0.5";
+  action20252.style.filter = "grayscale(1)"; 
+  action20253.style.opacity = "0.5";
+  action20253.style.filter = "grayscale(1)";  
+   action20254.style.opacity = "0.5";
+  action20254.style.filter = "grayscale(1)";
+  action20255.style.opacity = "0.5";
+  action20255.style.filter = "grayscale(1)";
+   action20256.style.opacity = "0.5";
+  action20256.style.filter = "grayscale(1)";
+    action20257.style.opacity = "0.5";
+  action20257.style.filter = "grayscale(1)";
+    action20258.style.opacity = "1";
+  action20258.style.filter = "grayscale(0)";
+    action20259.style.opacity = "0.5";
+  action20259.style.filter = "grayscale(1)";
+    action202510.style.opacity = "0.5";
+  action202510.style.filter = "grayscale(1)";
+    };
+       action20259.onclick = function(){
+  showAction20251.style.display = "none"; 
+  showAction20252.style.display = "none";
+  showAction20253.style.display = "none";  
+  showAction20254.style.display = "none"; 
+  showAction20255.style.display = "none"; 
+  showAction20256.style.display = "none";
+  showAction20257.style.display = "none";
+  showAction20258.style.display = "none";
+  showAction20259.style.display = "flex";
+  showAction202510.style.display = "none";
+  action20251.style.opacity = "0.5";
+  action20251.style.filter = "grayscale(1)";
+  action20252.style.opacity = "0.5";
+  action20252.style.filter = "grayscale(1)"; 
+  action20253.style.opacity = "0.5";
+  action20253.style.filter = "grayscale(1)";  
+   action20254.style.opacity = "0.5";
+  action20254.style.filter = "grayscale(1)";
+  action20255.style.opacity = "0.5";
+  action20255.style.filter = "grayscale(1)";
+   action20256.style.opacity = "0.5";
+  action20256.style.filter = "grayscale(1)";
+    action20257.style.opacity = "0.5";
+  action20257.style.filter = "grayscale(1)";
+    action20258.style.opacity = "0.5";
+  action20258.style.filter = "grayscale(1)";
+    action20259.style.opacity = "1";
+  action20259.style.filter = "grayscale(0)";
+    action202510.style.opacity = "0.5";
+  action202510.style.filter = "grayscale(1)";
+    };
+         action202510.onclick = function(){
+  showAction20251.style.display = "none"; 
+  showAction20252.style.display = "none";
+  showAction20253.style.display = "none";  
+  showAction20254.style.display = "none"; 
+  showAction20255.style.display = "none"; 
+  showAction20256.style.display = "none";
+  showAction20257.style.display = "none";
+  showAction20258.style.display = "none";
+  showAction20259.style.display = "none";
+  showAction202510.style.display = "flex";
+  action20251.style.opacity = "0.5";
+  action20251.style.filter = "grayscale(1)";
+  action20252.style.opacity = "0.5";
+  action20252.style.filter = "grayscale(1)"; 
+  action20253.style.opacity = "0.5";
+  action20253.style.filter = "grayscale(1)";  
+   action20254.style.opacity = "0.5";
+  action20254.style.filter = "grayscale(1)";
+  action20255.style.opacity = "0.5";
+  action20255.style.filter = "grayscale(1)";
+   action20256.style.opacity = "0.5";
+  action20256.style.filter = "grayscale(1)";
+    action20257.style.opacity = "0.5";
+  action20257.style.filter = "grayscale(1)";
+    action20258.style.opacity = "0.5";
+  action20258.style.filter = "grayscale(1)";
+    action20259.style.opacity = "0.5";
+  action20259.style.filter = "grayscale(1)";
+    action202510.style.opacity = "1";
+  action202510.style.filter = "grayscale(0)";
+    };
 // HIDE SHOW ACTIONS //
 const action20241 = document.getElementById('action24-1'); //options
 const action20242 = document.getElementById('action24-2'); //options
